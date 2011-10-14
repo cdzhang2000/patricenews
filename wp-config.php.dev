@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'enewswppd');
+define('DB_NAME', 'dev-enewswppd');
 
 /** MySQL database username */
 define('DB_USER', 'enewswppd_owner');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'enewswppd0wner');
+define('DB_PASSWORD', 'devenew$owner');
 
 /** MySQL hostname */
-define('DB_HOST', 'amarie.bioinformatics.vt.edu');
+define('DB_HOST', 'turtlefish.bioinformatics.vt.edu');
 
 /** TR88575 */
 define('FTP_HOST', 'localhost');
