@@ -1,0 +1,88 @@
+#header, #subheader,
+#toppage, #bottompage,
+#footer, .block, .post, .feature, .event,
+.block-content,
+.block {
+	zoom: 1;
+}
+
+ul#mainnav ul div.submenu {
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+ul#secondarynav li.login {
+	zoom: 1;
+}
+
+ul#secondarynav li.login .login-id {
+	display: inline;
+	float: none;
+}
+ul#secondarynav li.login a {
+	float: none;
+	display: inline-block;
+}
+
+/* IE 6 does not support transparent border colors, so we have to set 
+   colors equal to the background or set border widths to 0. If you
+   change the border width you will affect spacing, which is not good
+   if you are trying to line up multiple columns, as in the watch list. */
+
+ul.watchlist-list li {
+	border-color: #f4f4f4;
+	border-top-color: #dfdfdf;
+}
+
+ul.watchlist-list li.first {
+	border-top-color: #f4f4f4;
+}
+
+ul.watchlist-list li.selected {
+	border-bottom-color: #dbe8ee;
+}
+
+#searchSelector ul li {
+	border: 1px #f4f4f4 solid;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-top-width: 0;
+}
+
+#searchSelector ul li.active {
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+}
+
+#feature .caption {
+	background-color: #32688d;
+}
+
+#watchlistPanel {
+	height: 220px;
+}
+
+#bacteriaDetail {
+	height: 230px;
+}
+
+/* gradients the IE6 way */
+
+ul#secondarynav li.login {
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#32688d, endColorStr=#114c75);
+}
+
+#footer {
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#09456f, endColorStr=#32688d);
+}
+
+/* IE 6 PNG fix. */
+
+h2 {
+	display: inline-block;
+}
+
+h2 span, #footer *, #detailNotch {
+	behavior: url('/cssie/iepngfix.htc');
+}

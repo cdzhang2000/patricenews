@@ -1,0 +1,12 @@
+/*-- Corrections for Internet Explorer 6 Oddities --*/
+
+	 ul#nav {
+		padding: 0px 20px 0px!important;
+		}
+	#sidebar { 
+		margin:0px 10px 0px 0px!important;
+		padding:0px 0px 0px 20px!important;
+		}
+	#content{
+		margin: 5px 0px 20px 0px!important;
+		}

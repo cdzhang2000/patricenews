@@ -1,0 +1,19 @@
+<?php
+ini_set("display_errors",0);
+
+require ('vbi.class.php');
+//Create report
+$options = array(
+	'ga_login'=>'patricbrc@vbi.vt.edu',
+	'ga_password'=>'patricwebstats',
+	'ga_report_id'=>'23746000',
+	'start_date'=>date('Y-m-d',strtotime('1 day ago')),
+	'end_date'=>date('Y-m-d'),
+	'match_path'=>"/portal/portal/patric/Taxon\\?cType=taxon&cId=",
+	'number_of_tags'=>5,
+	'limit'=>30
+);
+
+$vbi = new VBI($options);
+
+echo "var cloud = " . $vbi->generate_cloud_json() . ";";

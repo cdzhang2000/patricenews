@@ -1,0 +1,15 @@
+p.facebook a {
+	text-decoration: none;
+	font-style: italic;
+	color: #666;
+	font-size:12px;
+}
+
+p.facebook a:hover {
+	text-decoration: underline;
+}
+
+
+p.facebook img {
+	margin: 1px 5px 0 0;
+}

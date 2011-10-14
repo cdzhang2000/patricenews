@@ -1,0 +1,526 @@
+/*
+Theme Name: Corporate Orange
+Theme URI: http://networksolutions.com/
+Description: Custom Corporate them by Network Solutions&trade;.
+Version: v1
+Author: Network Solutions&trade;
+Author URI: http://networksolutions.com/
+Tags: corporate, custom, fixed width, orange, two column, textured, professional
+	
+		Network Solutions&trade; Corporate Theme 1.
+
+*/
+
+/* Startup */
+
+* {
+	margin: 0;
+	padding: 0;
+}	
+html {
+	font-size: 100%;
+}
+
+p {
+	padding: 5px 0px;
+}
+
+a img { border: none; }
+
+.clear { clear: both; margin: 0; padding: 0; height: 0; font-size:0;}
+
+.auto {
+	width: auto;
+}
+
+/* Begin Typography & Colors */
+
+body {
+	font: 62.5%/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; 
+	background: #eee; 
+	padding-bottom: 10px;
+}
+
+#page {
+	width: 972px; 
+	_width: 972px; 
+	margin: 15px auto 10px auto;
+	position: relative;  
+	background: #fff url(images/wrapperBack.jpg) repeat-y;  
+	padding: 4px 4px 8px 4px; 
+	overflow: hidden;
+}
+#wrapperTopBack{
+	position: absolute; 
+	height: 4px; 
+	width: 980px; 
+	background: url(images/wrapperBackTop.jpg) top left no-repeat; 
+	top: 0; 
+	left: 0;
+}
+
+#wrapperBottomBack{
+	position: absolute; 
+	height: 8px; 
+	width: 980px;
+	background: url(images/wrapperBackBottom.jpg) bottom left no-repeat; 
+	bottom: -8px; 
+	left: 0;
+}
+
+html>body #wrapperBottomBack{bottom: 0;}
+
+a { 
+	color: #cb9239;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+small {
+	font-size: 11px;
+	color: #999999;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+h2.pagetitle {
+	color: #333333;
+	font-size: 18px;
+}
+
+/* ---------- Begin Header ------------- */
+
+#header {
+	background: #333 url(images/mastheadBack.jpg) bottom center no-repeat;
+	height: 127px;
+	color: #ededed;
+	border-bottom: 1px solid #919191;
+}
+
+#header h1 {
+	font-variant: small-caps;
+	padding: 30px 30px 0 30px;
+	font-weight: normal;
+	font-size: 3.6em;
+	line-height: 1em;
+}
+
+#header h2 {
+	font-style:italic;
+	font-size: 1.2em; 
+	padding-left: 35px;
+	line-height: 1em;
+}
+
+#header a {
+	color: #ededed;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#header form {
+	position: absolute; 
+	top: 25px; 
+	right: 25px;  
+	line-height: 1.3em;
+}
+#header form label {
+	float: left; 
+	padding:.3em .5em; 
+	text-transform: uppercase;
+}
+#header form input{
+	float: left; 
+	height: 1.3em; 
+	width: 10em; 
+	border: 2px solid #d2d2d2; 
+	background: #e2e2e2; 
+	margin-right: .5em;
+}
+#header form button{
+	float: left; 
+	color: #cb9239; 
+	text-transform: uppercase; 
+	border: 2px solid #d2d2d2; 
+	font-size: 1em; 
+	padding:.1em; 
+	background:#dcdcdc url(images/buttonBack.jpg) repeat-x;
+}
+
+/* ---------------- Begin Navigation ------------------- */
+
+#menu {
+	float: left; 
+	width: 100%;
+	background: #462e09; 
+	border-bottom: #808285;
+}
+
+#menu ul {
+	font-size: 1.4em; 
+	list-style-type: none; 
+	border-bottom: #575b5e; 
+	margin-left:10px;
+}
+
+#menu ul li {
+	float: left;
+}
+
+#menu ul li a {
+	color: #fff; 
+	display: block; 
+	padding: 10px 10px 5px 10px;
+}
+
+#menu ul li a:hover{
+	color: #cb9239; 
+	text-decoration: none;
+}
+
+#menu ul li.current_page_item {
+	background: url(images/currentPageLeft.jpg) bottom left no-repeat; 
+	padding-left:6px;
+}
+
+#menu ul li.current_page_item a {
+	color: #cb9239; 
+	background:url(images/currentPageRight.jpg) bottom right no-repeat; 
+	padding-right:18px;
+}
+
+/* ---------------- Content Area ------------------- */
+
+#content-wrapper{
+	background: url(images/contentWrapperBack.jpg) repeat-x; 
+	_background-image: url(images/contentWrapperBackie6.jpg);
+	padding-top: 15px; 
+	float: left; 
+	width: 970px; 
+	_width:967px;
+}
+
+html>body #content-wrapper{margin: 0; width: 972px;}
+html>body #content-wrapper{margin: 0 1px; width: 971px;}
+
+#content {
+	margin: 20px 10px; 
+	width: 620px; 
+	float: left; 
+	display: inline;
+}
+
+/* --------------------- Start Posts ------------------ */
+
+.post, .page {
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.post, .page { 
+	background: #fff; 
+	border: 1px solid #595959; 
+	margin-bottom: 2em; 
+	padding: 10px;
+}
+
+.post p a, .page p a {
+	font-weight: bold;
+}
+
+.post ul, ol, dl {
+	margin-left:20px;
+}
+
+.postHeader {
+	background:url(images/primaryContentSectionHeaderBack.jpg) bottom center no-repeat; 
+	margin-bottom: 10px; 
+	padding-bottom: 10px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	float: left; 
+	width: 100%; 
+	clear: both;
+}
+
+.postHeader h3 {
+	float: left; 
+	font-style: italic; 
+	font-size: 1.8em;
+}
+
+.byLine {
+	float: right; 
+	text-align: right; 
+	font-size: 1.2em; 
+	font-weight: bold; 
+	clear: right;
+}
+
+.postDate {
+	text-align: right; 
+	text-transform: uppercase; 
+	float: right; 
+	clear: right;
+}
+
+.tags {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-size: 1.1em;
+}
+
+/* --------------- Post Navigation --------------------- */
+
+ul#postNavigation, div.navigation {
+	float: left; 
+	width: 100%; 
+	clear: both; 
+	list-style: none; 
+	border: 1px solid #595959;
+}
+
+ul#postNavigation li, div.navigation div {
+	padding: 10px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-variant: small-caps;
+	font-size: 1.2em;
+}
+
+li#olderPosts, div.navigation div.alignleft {
+	float: left;
+	width: 250px;
+}
+
+li#newerPosts, div.navigation div.alignright {
+	float: right;
+	width: 250px; 
+	text-align: right;
+}
+
+div.navigation { margin: 0px 2px 2em 0; }
+
+/* -------------- Post Content Formattion ---------------- */
+
+#content .entry h2, #content .entry h3 {
+	float: none;
+}
+
+#content .entry ul, #content .entry ol {
+	margin: 5px 0px 5px 35px;
+}
+
+#content .entry blockquote {
+	margin: 5px 20px;
+	padding: 8px;
+	border: 1px solid #cb9239;
+	background: #666666;
+	color: #CCCCCC;
+}
+
+code {
+	font-size: 1.3em;
+	font-family:"Courier New", Courier, monospace;
+}
+
+#content .entry pre code {
+	display: block;
+	margin: 5px 25px;
+	background: #EFEFEF;
+	border: 1px solid #aaaaaa;
+	color: #000000;
+	padding: 8px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+#content .entry p {
+	padding: 5px 0px;
+	margin: 0;
+}
+
+/* -------------- Start Footer --------------------- */
+
+#footer{border-top: 1px solid #979a9b; float: left; width: 98%; margin-left: 1%; clear: both;}
+#footer ul{float: left; padding-left: 10px; list-style-type: none;}
+#footer li{float: left; padding-right: 10px; text-transform: uppercase; font-size: .9em;}
+#footer p{ padding: 2px 10px; color: #525659;}
+
+/* ----------- Start Sidebar -------------------- */
+
+#sidebar {
+	float: right; 
+	margin: 20px 10px; 
+	width: 300px;
+}
+
+#sidebar ul {
+	background: #fff; 
+	list-style: none;
+}
+
+#sidebar ul li {
+	border: 1px solid #595959; 
+	margin-bottom: 2em; 
+	padding: 0px 10px 10px;
+}
+
+#sidebar li h2 {
+	background:url(images/secondaryContentSectionHeaderBack.jpg) center 20px no-repeat;
+	padding: 10px 0px 15px 2px;
+	margin: 0;
+	font-size: 1.8em;
+	font-style: italic;
+}
+
+#sidebar ul li li {
+	border: none; 
+	background: none;
+	margin-bottom: 0px;
+	padding: 2px;
+}
+
+#sidebar ul ul {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+
+
+/* ----------------- Begin Comments ------------------- */
+
+/* Begin Comments*/
+
+.post .postmetadata small {
+	float: none;
+	color: #666666;
+}
+
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+	
+#comments {
+	clear: both;
+	margin: 5px 0px;
+	background: #CCCCCC;
+	padding: 3px 6px;
+}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 10px;
+	padding: 5px 5px 10px 10px;
+	list-style: none;
+
+	}
+.commentlist li ul li { 
+	margin-right: -5px;
+	margin-left: 10px;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 15px;
+}
+.children { padding: 0; }
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+#respond {
+	border: 1px solid #666666;
+	padding: 5px;
+}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 3px 5px 1px 5px;
+	}
+
+#commentform {
+	margin: 5px 10px 0 0;
+	}
+#commentform textarea {
+	width: 98%;
+	margin-left: 5px;
+	padding: 2px;
+	}
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+#commentform #submit {
+	margin: 0 15px 5px auto;
+	float: right;
+	}
+	
+.comment.even {
+	background: #EFEFEF;
+}
+/* End Form Elements */
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+	
+	img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+	
+/* ------------- Begin Input Elements ----------------- */
+
+input, select, textarea {
+	border: 1px solid #333333;
+	background: #EFEFEF;
+}
+
+form p {
+	padding: 0px 0px;
+	line-height: 1em;
+}
+	

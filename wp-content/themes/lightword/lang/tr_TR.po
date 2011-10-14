@@ -1,0 +1,554 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.6.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-25 20:55+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Tercan Keskin <info@tercan.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Türkçe\n"
+"X-Poedit-Country: Türkiye\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+#: archives.php:61
+#: archives.php:71
+#: index.php:23
+#: page.php:15
+#: single.php:44
+msgid "Not Found"
+msgstr "Bulunamadı"
+
+#: 404.php:5
+#: archives.php:61
+#: archives.php:72
+#: index.php:24
+#: page.php:16
+#: single.php:45
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Üzgünüz ama aradığınız şey burada değil."
+
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "Okumaya devam et"
+
+#: comments.php:6
+#: legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için lütfen şifre girin."
+
+#: comments.php:15
+#: index.php:12
+#: legacy.comments.php:12
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: comments.php:16
+msgid "Trackbacks"
+msgstr "Geri izlemeler"
+
+#: comments.php:17
+#: legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr "(bu yazının yorumlarına abone ol)"
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Eski Yorumlar"
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Yeni Yorumlar &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+msgid "No comments yet."
+msgstr "Yorum yapılmadı."
+
+#: comments.php:41
+#: legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Üzgünüz, yorum formu şu anda kapalı."
+
+#: comments.php:48
+#: legacy.comments.php:52
+#: single.php:27
+msgid "Leave a comment"
+msgstr "Yorum gönder."
+
+#: comments.php:51
+#: legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Yorum yapabilmeniz için <a href=\"%s\">giriş</a> yapmalısınız."
+
+#: comments.php:56
+#: legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr "%s olarak giriş yaptınız."
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out of this account"
+msgstr "Hesaptan çıkış yap"
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr "Çıkış &raquo;"
+
+#: comments.php:65
+#: legacy.comments.php:67
+msgid "Name"
+msgstr "İsim"
+
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+msgid "(required)"
+msgstr "(zorunlu)"
+
+#: comments.php:68
+#: legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr "E-posta (yayınlanmaz)"
+
+#: comments.php:71
+#: legacy.comments.php:73
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:75
+#: legacy.comments.php:81
+msgid "Submit"
+msgstr "Gönder"
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr "( Vazgeç )"
+
+#: comments.php:85
+msgid "No trackbacks yet."
+msgstr "Geri izleme yok."
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr "Geri izlemeler devre dışı bırakıldı."
+
+#: footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Altyapı: %s <br/> %s, %s tarafından geliştirilmiştir."
+
+#: footer.php:11
+msgid "Go to top"
+msgstr "En başa dön"
+
+#: functions.php:20
+msgid "Cufon settings"
+msgstr "Cufon ayarları"
+
+#: functions.php:22
+#: functions.php:23
+#: functions.php:106
+#: functions.php:107
+msgid "Enabled"
+msgstr "Aktif edildi."
+
+#: functions.php:22
+#: functions.php:106
+msgid "Disabled"
+msgstr "Devre dışı bırakıldı"
+
+#: functions.php:22
+msgid "Extra"
+msgstr "Ekstra"
+
+#: functions.php:26
+msgid "Disable comments on pages"
+msgstr "Sayfalar için yorumları kapat"
+
+#: functions.php:27
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Eğer sayfalarda yorumları devre dışı bırakmak istiyorsanız bu kutuyu işaretleyin."
+
+#: functions.php:32
+msgid "Image instead text on header"
+msgstr "Başlıkta metin yerine resim kullan"
+
+#: functions.php:33
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Eğer sayfa üstünde (logo olarak) Cufon metin yerine resim kullanmak istiyorsanız bu kutuyu işaretleyin.<br/>Resim adresi: <code>lightword/images/header-image.png</code> / Maksimum genişlik: <code>796px</code>"
+
+#: functions.php:38
+msgid "Header image height in pixels"
+msgstr "Header resim yüksekliği (pixel)"
+
+#: functions.php:44
+msgid "About author feature"
+msgstr "Yazar özellikleri hakkında"
+
+#: functions.php:45
+msgid "Add information about post author on post footer"
+msgstr "Yazının altına yazar bilgisini ekle"
+
+#: functions.php:50
+msgid "Enjoy this post feature"
+msgstr "Bu yazıyı beğen"
+
+#: functions.php:51
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Eğer <em>Bu yazıyı beğen</em> özelliğini istiyorsanız bu kutuyu işaretleyin"
+
+#: functions.php:56
+msgid "Show categories on front menu"
+msgstr "Kategorileri ana menüde göster"
+
+#: functions.php:57
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Eğer sayfanın üst çubuğunda sayfaların yerine kategorileri görüntülemek isterseniz bu kutuyu işaretleyin."
+
+#: functions.php:62
+msgid "Exclude pages from front menu"
+msgstr "Kategorileri ana menüden çıkar"
+
+#: functions.php:63
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
+msgstr "Doğru giriş: <code>5,19,24</code>"
+
+#: functions.php:68
+msgid "Exclude categories from front menu"
+msgstr "Kategorileri ana menüden çıkar"
+
+#: functions.php:74
+msgid "Remove home button"
+msgstr "Anasayfa butonunu kaldır"
+
+#: functions.php:75
+msgid "Remove home button from front menu"
+msgstr "Anasayfa butonunu ana menüden kaldır"
+
+#: functions.php:80
+msgid "Remove search box"
+msgstr "Arama kutusunu kaldır"
+
+#: functions.php:81
+msgid "Remove search box and expand space for front menu"
+msgstr "Arama kutusunu ana menüden kaldır ve alanı genişlet"
+
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr "Yazılardan etiketleri kaldır"
+
+#: functions.php:87
+msgid "Show only categories in post footer"
+msgstr "Yazıların altında sadece kategorileri göster"
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr "RSS rozetini kaldır"
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr "Blog başlığından RSS rozetini kaldır"
+
+#: functions.php:99
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+
+#: functions.php:104
+msgid "Sidebox settings"
+msgstr "Yan kutu ayarları"
+
+#: functions.php:106
+msgid "Show only date"
+msgstr "Sadece tarihi göster"
+
+#: functions.php:106
+msgid "Show only in posts"
+msgstr "Sadece yazılarda göster"
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr "Son iki seçenekle birlikte"
+
+#: functions.php:138
+#: functions.php:150
+msgid "LightWord Settings"
+msgstr "LightWord Ayarları"
+
+#: functions.php:145
+msgid "settings saved"
+msgstr "ayarlar kaydedildi"
+
+#: functions.php:146
+msgid "settings reset"
+msgstr "ayarları sıfırla"
+
+#: functions.php:154
+msgid "Support the developer"
+msgstr "Geliştiriciyi destekle"
+
+#: functions.php:165
+msgid "Theme version check"
+msgstr "Tema sürüm kontrolü"
+
+#: functions.php:174
+msgid "Version check failed."
+msgstr "Sürüm kontrol hatası"
+
+#: functions.php:176
+msgid "Cool! You have the latest version."
+msgstr "Harika! En son sürüme sahipsiniz."
+
+#: functions.php:176
+#: functions.php:177
+msgid "view changelog"
+msgstr "değişiklik kaydını göster"
+
+#: functions.php:177
+msgid "You have"
+msgstr "Tema sürümünüz"
+
+#: functions.php:177
+msgid "Latest version"
+msgstr "En son sürüm"
+
+#: functions.php:177
+msgid "Get the latest version"
+msgstr "En son sürümünü edinin"
+
+#: functions.php:184
+msgid "General settings"
+msgstr "Genel Ayarlar"
+
+#: functions.php:238
+msgid "Save changes"
+msgstr "Değişiklikleri kaydet"
+
+#: functions.php:244
+msgid "Search for help"
+msgstr "Yardım için ara"
+
+#: functions.php:244
+msgid "or"
+msgstr "veya"
+
+#: functions.php:259
+#: functions.php:271
+msgid "No updates available."
+msgstr "Güncelleme bulunmuyor."
+
+#: functions.php:278
+msgid "What is Cufon?"
+msgstr "Cufon nedir?"
+
+#: functions.php:285
+msgid "Click here to reset all settings"
+msgstr "Tüm ayarları sıfırlamak için tıklayın"
+
+#: functions.php:482
+msgid "Search"
+msgstr "Arama"
+
+#: functions.php:507
+#: functions.php:524
+msgid "Off"
+msgstr "Kapalı"
+
+#: functions.php:562
+msgid "delete"
+msgstr "sil"
+
+#: functions.php:563
+msgid "spam"
+msgstr "spam"
+
+#: functions.php:564
+msgid "edit"
+msgstr "düzenle"
+
+#: functions.php:572
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Lütfen tarayıcınızın referer ayarlarını açın, eğer reklamcıysanız toz olun!"
+
+#: functions.php:584
+#: sidebar.php:33
+msgid "Syndicate this site using RSS"
+msgstr "Bu siteyi RSS kullanarak paylaş"
+
+#: functions.php:584
+msgid "Subscribe via RSS"
+msgstr "RSS Aboneliği"
+
+#: functions.php:607
+msgid "F jS, Y - H:i"
+msgstr "d F Y, H:i"
+
+#: functions.php:609
+msgid "( REPLY )"
+msgstr "( CEVAPLA )"
+
+#: functions.php:610
+#: legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz denetim için bekliyor."
+
+#: header.php:28
+msgid "Home"
+msgstr "Anasayfa"
+
+#: index.php:11
+#: single.php:26
+msgid "Filed under:"
+msgstr "Kategori:"
+
+#: index.php:11
+#: single.php:26
+msgid "Tagged as:"
+msgstr "Etiketler:"
+
+#: index.php:12
+msgid "1 Comment"
+msgstr "1 yorum"
+
+#: index.php:12
+#: single.php:27
+msgid "Comments Off"
+msgstr "Yorumlar kapalı"
+
+#: index.php:12
+msgid "No Comments"
+msgstr "Yorum yok"
+
+#: index.php:12
+msgid "Read more about"
+msgstr "Hakkında daha fazla bilgi"
+
+#: index.php:29
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Yeni Yazılar"
+
+#: index.php:30
+msgid "Older Entries &raquo;"
+msgstr "Eski yazılar &raquo;"
+
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr "d F Y"
+
+#: legacy.comments.php:26
+msgid "edit this comment"
+msgstr "bu yorumu düzenle"
+
+#: legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Bu etiketleri kullanabilirsiniz: %s"
+
+#: page.php:6
+msgid "Edit this page"
+msgstr "Bu sayfayı düzenle"
+
+#: sidebar.php:9
+msgid "Pages"
+msgstr "Sayfalar"
+
+#: sidebar.php:14
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: sidebar.php:19
+msgid "Blogroll"
+msgstr "Bağlantılar"
+
+#: sidebar.php:24
+msgid "Archive"
+msgstr "Arşiv"
+
+#: sidebar.php:29
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:33
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: sidebar.php:34
+msgid "The latest comments to all posts in RSS"
+msgstr "Tüm gönderilerin son yorumlar için RSS "
+
+#: sidebar.php:34
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Yorumlar <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: single.php:7
+msgid "Edit this post"
+msgstr "Bu yazıyı düzenle"
+
+#: single.php:13
+msgid "Enjoy this article?"
+msgstr "Bu yazıyı beğendiniz mi?"
+
+#: single.php:14
+msgid "Consider subscribing to our rss feed!"
+msgstr "RSS Kaynağımıza abone olun!"
+
+#: single.php:21
+msgid "About"
+msgstr "Hakkında"
+
+#: single.php:21
+msgid "No description. Please complete your profile."
+msgstr "Açıklama yok. Lütfen profilinizi tamamlayın."
+
+#~ msgid "Post author"
+#~ msgstr "Yazar"
+#~ msgid "Take out tags in posts footer"
+#~ msgstr "Etiketleri yazının altından çıkar"
+#~ msgid "Author"
+#~ msgstr "Yazar"
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr "<em>Cufon</em>'u devre dışı bırakmak için kutuyu işaretleyin.<br />"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Extra Cufon özellikleri akif"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "<em>Extra Cufon</em> özelliklerini aktif etmek için bu kutuyu işaretleyin."
+#~ "<br/><b>Özel karakterleri kullanabilmek için</b>"
+
+#, fuzzy
+#~ msgid "( Click here to cancel reply )"
+#~ msgstr "Tüm ayarları sıfırlamak için tıklayın"
+#~ msgid "% Comments"
+#~ msgstr "% yorum"
+
+#, fuzzy
+#~ msgid "Reply to this comment"
+#~ msgstr "bu yorumu düzenle"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature"
+#~ msgstr "<em>Cufon</em>'u devre dışı bırakmak için kutuyu işaretleyin.<br />"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead Cufon text on "
+#~ "header."
+#~ msgstr ""
+#~ "Eğer sayfanın üst çubuğunda sayfalar yerine kategorileri görüntülemek "
+#~ "isterseniz bu kutuyu işaretleyin."
+

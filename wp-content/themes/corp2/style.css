@@ -1,0 +1,704 @@
+/*
+Theme Name: Corporate Blue
+Theme URI: http://networksolutions.com/
+Description: Custom Corporate them by Network Solutions&trade;.
+Version: v1
+Author: Network Solutions&trade;
+Author URI: http://networksolutions.com/
+Tags: corporate, custom, fixed width, blue, black, featured area, professional, two column
+	
+		Network Solutions&trade; Corporate Professional Theme.
+
+*/
+
+/* Clears */
+
+body, p, ul, * {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 5px 0px;
+}
+
+a img { border: none; }
+
+.clear { clear: both; margin: 0; padding: 0; height: 0; font-size:0;}
+
+.auto {
+	width: auto;
+}
+
+/* Begin Typography & Colors */
+
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: Trebuchet MS, Verdana, sans;
+	background: url(images/bodyBG_internal.png) top left repeat-x #cccccc;
+	color: #333;
+}
+
+body#front {
+	background: url(images/bodyBG.png) top left repeat-x #CCCCCC;
+}
+
+#page {
+	width: 890px;
+	margin: 0pt auto;
+	position: relative;
+}
+
+a {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CC9933;
+}
+
+small {
+	font-size: 11px;
+	color: #999999;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	color: #3366cc;
+}
+
+h1 {
+	margin: 5px 0px;
+	padding: 0;
+}
+
+h2.pagetitle {
+	color: #333333;
+	font-size: 18px;
+}
+
+/* ---------- Begin Header ------------- */
+
+#header {
+	width: 890px;
+	margin: 0pt auto;
+	height: 58px;
+	* height: 56px;
+	position: relative;
+	z-index:1;
+}
+
+*:first-child+html #header { height: 58px; }
+
+#header h1 {
+	width: auto;
+	float: left;
+	padding: 10px 0px 0px 25px;
+	margin: 0;
+}
+
+#header h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+#slogan {
+	background-image: url(images/slogan/slogan_left.png); 
+	
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+	right: 0;
+	padding: 5px 0px 4px 44px;
+	float: right; 
+	font-size: 14px;
+	font-style: italic;
+	color: #CCCCCC;
+}
+
+span.slogan-cap {
+	display: block;
+	width: 44px;
+	height: 27px;
+	background-image: url(images/slogan/slogan_right.png);
+	background-position: top left;
+	background-repeat: no-repeat; 
+	text-align: right;
+	float: right;
+}
+
+#meta_links {
+	position: relative;
+	top: 1px;
+	right: 0px;
+	z-index: 5;
+	width: 180px;
+	float: right;
+	clear: right;
+}
+
+a.rss_link {
+	display: block;
+	text-indent: -9999px;
+	background: url(images/rss.png) top left no-repeat;
+	width: 57px;
+	height: 27px;
+	float: left;
+	padding-right: 15px;
+}
+
+a.rss_link:hover {
+	background: url(images/rss_hover.png) top left no-repeat;
+}
+
+a.email_link {
+	display: block;
+	text-indent: -9999px;
+	background: url(images/email.png) top left no-repeat;
+	width: 71px;
+	height: 27px;
+	float: left;
+}
+
+a.email_link:hover {
+	background: url(images/email_hover.png) top left no-repeat;
+}
+
+/* ---------------- Begin Navigation ------------------- */
+
+body#front #body-wrapper {
+	background: url(images/splashBG.png) top left repeat-x #DDDDDD;
+}
+
+#body-wrapper {
+	background: url(images/bodyBG_internal.png) left -58px repeat-x #dddddd;
+	position: relative;
+	padding: 0px 12px 12px 12px;
+}
+
+#nav {
+	width: 92%;
+	margin: 0pt auto;
+	height: 44px;
+}
+
+body#front #nav {
+	height: 31px;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+#nav ul li {
+	margin: 0px 2px;
+	float: left;
+}
+
+#nav ul li a, a.homeBtn {
+	padding-right: 8px;
+	background: url(images/nav/tab_right.gif) top right no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-decoration: none;
+	float: left;
+}
+
+#nav ul li a span, a.homeBtn span {
+	display: block;
+	padding: 6px 4px 6px 12px;
+	background: url(images/nav/tab_left.gif) top left no-repeat;
+}
+
+#nav ul li:hover a, #nav ul li.sfhover a, a.homeBtn:hover {
+	background: url(images/nav/tabHover_right.gif) top right no-repeat;
+	color: #333333;
+}
+
+#nav ul li:hover a span, #nav ul li.sfhover a span, a.homeBtn:hover span {
+	background: url(images/nav/tabHover_left.gif) top left no-repeat;
+	
+}
+
+/* ----------------- Featured Area -------------------- */
+
+#featured {
+	clear: both;
+	width: 675px;
+	height: 187px;
+	margin: 0px auto 0px;
+	background: url(images/feat.jpg) top left no-repeat;
+	overflow: hidden;
+	padding: 5px 159px 5px 15px
+}
+
+#featured h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #367dc4;
+	border-bottom: 1px solid #367dc4;
+	padding-left: 10px;
+}
+
+#featured p {
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+/* ---------------- Content Area ------------------- */
+
+#status_msg {
+	position: relative;
+	top: 0px;
+	left: 45px;
+}
+
+#content {
+	position: relative;
+	padding: 20px 0px 10px 30px;
+}
+
+.narrowcolumn {
+	width: 560px;
+	float: left;
+}
+
+.widecolumn {
+	width: 805px;
+	margin: 0pt auto;
+}
+
+/* --------------------- Start Posts ------------------ */
+
+.post, .page {
+	margin-bottom: 10px;
+	clear: both;
+}
+
+#content .post h2, #content .post h3, #content .page h2, #content .page h3 {
+	width: auto;
+	float: left;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.post h2 a, .post h3 a, .page h2 a, .page h3 a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #3366cc;
+}
+
+.post small, .page small {
+	font-size: 11px;
+	color: #999999;
+	float: left;
+	width: auto;
+	padding-top: 5px;
+}
+
+.post .entry, .page .entry {
+	clear: both;
+	font-size: 12px;
+	color: #333333;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+
+.post div.postmetadata, .page div.postmetadata {
+	border-top: 1px solid #20407f;
+	clear: both;
+	margin: 5px 0px 10px;
+	float: left;
+	width: 100%;
+}
+
+.post p.tags, .page p.tags {
+	font-size: 10px;
+	color: #666666;
+	width: 47%;
+	float: left;
+}
+
+.post p.tags a, .page p.tags a {
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.post .postTools, .page .postTools {
+	background: url(images/posts/postToolsBG.jpg) top left repeat-x;
+	width: 49%;
+	float: right;
+	margin-right: 2%;
+	color: #cccccc;
+}
+
+.postTools .postTools_left {
+	background: url(images/posts/postTools_left.jpg) top left no-repeat;
+	width: 20px;
+	height: 19px;
+	float: left;
+}
+
+.postTools span {
+	float: left;
+	text-align: center;
+	width: 85%;
+	padding-top: 1px;
+	line-height: 5px;
+}
+
+.postTools a {
+	color: #cccccc;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.postTools .postTools_right {
+	background: url(images/posts/postToolsRight.jpg) top right no-repeat;
+	width: 21px;
+	height: 19px;
+	float: right;
+}
+
+/* -------------- Post Content Formattion ---------------- */
+
+#content .entry h2, #content .entry h3 {
+	float: none;
+}
+
+#content .entry ul, #content .entry ol {
+	margin: 5px 0px 5px 35px;
+}
+
+#content .entry blockquote {
+	margin: 5px 20px;
+	padding: 8px;
+	border: 1px dashed #3366CC;
+	background: #cedae6;
+}
+
+#content .entry pre code {
+	display: block;
+	margin: 5px 20px;
+	background: #EFEFEF;
+	border: 1px solid #333333;
+	color: #000000;
+	padding: 8px;
+}
+
+#content .entry p {
+	padding: 5px 0px;
+	margin: 0;
+}
+
+/* -------------- Start Footer --------------------- */
+
+#footer-wrapper {
+	width: 100%;
+	position: relative;
+	background: url(images/footerFullBG.jpg) top left repeat-x;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 65px;
+	* top: -32px;
+}
+
+#footer {
+	width: 882px;
+	margin: 0pt auto;
+	background: url(images/footerBG.jpg) top left repeat-x;
+	padding: 4px;
+}
+
+#footer p {
+	padding: 2px 0px;
+}
+
+#footer_nav {
+	width: 55%;
+	float: left;
+}
+
+#footer_nav .footerHome {
+	float: left;
+	padding: 0px 8px;
+}
+
+#footer_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer_nav ul li {
+	float: left;
+	padding: 0px 6px;
+	border-left: 1px solid #333333;
+}
+
+#footer_nav a {
+	color: #333333;
+	font-size: 12px;
+}
+
+#footer_nav a:hover {
+	text-decoration: underline;
+}
+
+/* -------------------- Start Search Form --------------------- */
+
+.searchBox {
+	background: url(images/search/searchBG.jpg) top left repeat-x;
+	width: 285px;
+	margin-left: 15px;
+	position: relative;
+
+}
+
+.searchBox_left {
+	background: url(images/search/searchLeft.jpg) top left no-repeat;
+	width: 32px;
+	height: 33px;
+	float: left;
+}
+
+.searchBox_right {
+	background: url(images/search/searchRight.jpg) top right no-repeat;
+	width: 33px;
+	height: 33px;
+	float: right;
+}
+
+#searchform { float: left; }
+
+#searchform input#s {
+	background: url(images/search/searchFieldBG.jpg) top left no-repeat;
+	border: none;
+	padding: 4px;
+	color: #666666;
+	width: 162px;
+	margin: 0px;
+	margin-right: 2px;
+	height: 24px;
+	position: absolute;
+	top: 4px;
+}
+
+#searchform #searchsubmit {
+	margin-top: 4px;
+	position: absolute;
+	left: 210px;
+	border: none;
+}
+
+/* ----------- Start Sidebar -------------------- */
+
+#sidebar * { position: relative; margin: 0; padding: 0; }
+
+#sidebar {
+	width: 250px;
+	float: left;
+	left: 30px;
+	padding-top: 20px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+#sidebar ul {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+#sidebar h2 {
+	background: url(images/sidebar/headingIco.png) left 15px no-repeat;
+	padding: 12px 0px 0px 20px;
+	color: #666666;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#sidebar ul ul {
+	margin-left: 20px;
+}
+
+#sidebar ul ul li {
+	background: url(images/sidebar/itemBullet.jpg) left 5px no-repeat;
+	padding-left: 20px;
+	color: #333333;
+	font-size: 12px;
+}
+
+#sidebar ul ul a {
+	color: #006699;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#sidebar a:hover {
+	color: #CC9933;
+}
+
+/* ----------------- Begin Comments ------------------- */
+
+/* Begin Comments*/
+
+.post .postmetadata small {
+	float: none;
+	color: #666666;
+}
+
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+	
+#comments {
+	clear: both;
+	margin: 5px 0px;
+	background: #CCCCCC;
+	padding: 3px 6px;
+}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 10px;
+	padding: 5px 5px 10px 10px;
+	list-style: none;
+
+	}
+.commentlist li ul li { 
+	margin-right: -5px;
+	margin-left: 10px;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 15px;
+}
+.children { padding: 0; }
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+#respond {
+	border: 1px solid #666666;
+	padding: 5px;
+}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 3px 5px 1px 5px;
+	}
+
+#commentform {
+	margin: 5px 10px 0 0;
+	}
+#commentform textarea {
+	width: 98%;
+	margin-left: 5px;
+	padding: 2px;
+	}
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+#commentform #submit {
+	margin: 0 15px 5px auto;
+	float: right;
+	}
+	
+.comment.even {
+	background: #EFEFEF;
+}
+/* End Form Elements */
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+	
+	img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+	
+/* ------------- Begin Input Elements ----------------- */
+
+input, select, textarea {
+	border: 1px solid #333333;
+	background: #EFEFEF;
+}
+
+form p {
+	padding: 0px 0px;
+	line-height: 1em;
+}
+	

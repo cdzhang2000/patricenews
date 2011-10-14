@@ -1,0 +1,16 @@
+ul.watchlist-list li.first {
+	border-top-color: transparent;
+}
+
+ul.watchlist-list li.selected.first {
+	border-top-color: #9dbdc8;
+}
+
+#newsSlot3 .last {
+	border-bottom-width: 0;
+}
+
+#bacteriaDetailWrapper #detailNotch {
+	top:13px;
+}
+

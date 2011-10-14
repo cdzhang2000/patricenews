@@ -1,0 +1,391 @@
+/*
+Theme Name: Trees Personal Theme
+Theme URI: http://networksolutions.com/
+Description: Custom Personal theme by Network Solutions&trade;.
+Version: v1
+Author: Network Solutions&trade;
+Author URI: http://networksolutions.com/
+Tags: personal, custom, fixed width, professional, trees, blue, red, two column
+	
+		Network Solutions&trade; Personal Theme.
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #c2cfd3;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+}
+
+#page-wrapper {
+	width: 100%;
+	background: url(images/bodyBG.jpg) top left repeat-x #FFFFFF;
+}
+
+a img {
+	border: none;
+}
+
+a {
+	color: #932a2a;
+	text-decoration: none;
+}
+
+p {
+	padding: 5px 0px;
+}
+
+.auto { width: auto; }
+
+.left { float: left; text-align: left; }
+
+.right { float: right; text-align: right; }
+
+.clear { clear: both; }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #932a2a;
+	text-transform:uppercase;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.1em; }
+
+#page {
+	width: 960px;
+	margin: 0pt auto;
+	padding-bottom: 15px;	
+}
+
+#header {
+	background: url(images/headerBG.jpg) top left no-repeat;
+	height: 154px;
+	position: relative;
+}
+
+#menu {
+	background: #89a1aa;
+	border-bottom: 2px solid #713838;
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul li {
+	float: left;
+}
+
+#menu ul li a {
+	display: block;
+	padding: 10px 18px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#menu ul li.current_page_item a, #menu ul li:hover a, #menu ul li.sfhover a {
+	background: url(images/nav_current.gif) 2px 11px no-repeat;
+	color: #713838;
+}
+
+#header form#searchform {
+	position: absolute;
+	top: 67px;
+	left: 753px;
+	display: block;
+	width: 190px;
+}
+
+#header form #s {
+	border: 1px solid #c0d2dc;
+	background: #c7d7e2;
+	color: #000000;
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+}
+
+#header form #btn {
+	float: left;
+	padding: 1px 0px 0px 8px;
+	border: none;
+	background: none;
+}
+
+.site_title h1, .site_title h1 a {
+	font-size: 27px;
+	text-transform:uppercase;
+	color: #713434;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 4px;
+}
+
+.narrowcolumn {
+	width: 705px;
+	float: left;
+}
+
+.widecolumn {
+	width: 940px;
+	margin: 0pt auto;
+}
+
+.post {
+	clear: both;
+	padding-top: 10px;
+}
+
+.page .entry {
+	width: 685px;
+	float: none;
+	clear: both;
+	padding: 10px 20px;
+}
+
+h2.pagetitle { font-size: 1.6em;  padding: 4px 8px;font-weight: normal; }
+
+.postHeader_left {
+	background: url(images/postHead_left.gif) top left no-repeat;
+	width: 9px;
+	height: 24px;
+	float:left;
+	
+}
+.postHeader {
+	float: left;
+	line-height: 24px;
+	background: url(images/postHead_right.jpg) top right no-repeat #b3c3c8;
+	width: 694px;
+	margin: 0px 0px 4px 0px;
+}
+
+.postDate {
+	width: 158px;
+	float: left;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.postHeader h3, .postHeader h3 a {
+	width: auto;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #48616c;
+}
+
+div.postmetadata {
+	width: 150px;
+	float: left;
+	padding: 10px 10px;
+	font-size: 11px;
+	line-height: 1.5em;
+}	
+
+div.postmetadata a {
+	font-weight: bold;
+}
+
+ul#postNavigation, div.navigation {
+	clear: both;
+	background: #B3C3C8;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 24px;
+}
+
+ul#postNavigation a, div.navigation a {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+ul#postNavigation a:hover, div.navigation a:hover {
+	color: #932A2A;
+}
+
+ul#postNavigation li#olderPosts, div.navigation div.alignleft {
+	height: 24px;
+	background: url(images/postHead_left.gif) top left no-repeat #B3C3C8;
+	float: left;
+	width: 49%;
+	padding-left: 4px;
+}
+
+ul#postNavigation li#newerPosts, div.navigation div.alignright {
+	height: 24px;
+	background: url(images/postHead_right.jpg) top right no-repeat #B3C3C8;
+	float: right;
+	width: 48%;
+	padding-right: 4px;
+	text-align: right;
+}
+
+.entry {
+	width: 525px;
+	float: left;
+	color: #48616c;
+	font-size: 1.2em;
+}
+
+.entry ul, .entry ol, .entry dl {
+	margin: 8px 0 8px 28px;
+	padding: 0;
+}
+
+.entry ul { 
+	list-style: none; 
+	margin-left: 16px;
+}
+
+.entry ul li {
+	padding-left: 18px;
+	background: url(images/asterisk.gif) left 3px no-repeat;
+}
+
+code {
+	font-size: 1.3em;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.entry pre code {
+	background: #EFEFEF;
+	color: #000000;
+	border: 1px solid #333333;
+	display: block;
+	margin: 5px 28px;
+	padding: 4px;
+	text-align: left;
+	font-size: 1.3em;
+}
+
+.entry blockquote {
+	background: #d7e0e2;
+	color: #333333;
+	margin: 5px 25px;
+	border: 1px solid #48616c;
+	padding: 5px;
+}
+
+#sidebar {
+	width: 221px;
+	float: right;
+	padding: 9px 5px 0 0;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar ul li {
+	border: 1px solid #b3ccde;
+	padding: 15px 8px;
+}
+
+#sidebar ul li li {
+	border: none;
+	padding: 2px 0px 2px 14px;
+	color: #000000;
+	background: url(images/asterisk.gif) left 3px no-repeat;
+}
+
+#sidebar ul li a {
+	color: #48616c;
+}
+
+#sidebar ul li a:hover {
+	color: #713434;
+}
+
+#sidebar ul h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #48616c;
+}
+
+#footer-wrapper {
+	width: 100%;
+	clear: both;
+	padding-bottom: 15px;
+}
+
+#footer {
+	width: 960px;
+	margin: 0pt auto;
+	text-align: left;
+	color: #000000;
+	text-size: 11px;
+	padding: 4px 0 0 0;
+}
+
+#footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer ul li {
+	float: left;
+	padding: 3px 8px;
+}
+
+/* ------------ Begin Comments --------------------- */
+
+h3#comments {
+	padding: 4px 10px;
+	font-size: 1.3em;
+}
+
+ol.commentlist {
+	width: 90%;
+	margin: 0pt auto;
+	padding: 10px 0;
+}
+
+li.comment {
+	margin: 4px 0;
+	padding: 4px;
+	border: 1px solid #B3C3C8;
+}
+
+li.comment.odd {
+	border: none;
+	padding: 4px;
+	background: #B3C3C8;
+}
+
+input, select, textarea {
+	border: 1px solid #c0d2dc;
+	background: #EFEFEF;
+	color: #000000;
+}
+
+#respond {
+	width: 90%;
+	margin: 0pt auto;
+	padding: 10px 0;
+}
+
+textarea#comment {
+	width: 635px;
+}

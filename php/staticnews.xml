@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PATRIC News &#187; FrontRSS</title>
+	<atom:link href="http://enews.patricbrc.org/frontRSS/" rel="self" type="application/rss+xml" />
+	<link>http://enews.patricbrc.org</link>
+	<description>Just another WordPress site</description>
+	<lastBuildDate>Fri, 16 Jul 2010 18:37:18 +0000</lastBuildDate>
+	<generator>http://wordpress.org/?v=3.0</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.0</generator>
+		
+	<item>
+		<title>Bacterial, Viral Genome data, better PubMed integration</title>
+		<link>http://enews.patricbrc.org/10/bacterial-viral-genome-data-better-pubmed-integration/</link>
+		<posttype>post</posttype>
+				<pubDate>29 Jun 2009</pubDate>
+		<dc:creator>admin</dc:creator>
+				<category><![CDATA[Data Releases & Updates]]></category>
+		<category><![CDATA[Meetings]]></category>
+		<category><![CDATA[Publications]]></category>
+		<category><![CDATA[Website Updates]]></category>
+		<guid isPermaLink="false">http://news.patric.site/?p=10</guid>
+		<description><![CDATA[Coxiella genomes and Rickettsia genomes added or updated with improved annotations. New Cornoavirus, Hepatitis E virus, and Lyssavirus genomes added. PubMed integration enhanced.]]></description>
+			<content:encoded><![CDATA[<h3>Bacterial Genome Data</h3>
+<p>The following four <i>Coxiella</i> genomes have been annotated using PATRIC&#8217;s automated genome annotation pipeline: <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=8263"><i>Coxiella burnetii</i> CbuG_Q212</a>, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=8264"><i>Coxiella burnetii</i> CbuK_Q154</a>, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=4326"><i>Coxiella burnetii</i> Dugway 5J108-111</a>, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=2804"><i>Coxiella burnetii</i> RSA 331</a>.</p>
+<p>In addition, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=40"><i>Coxiella burnetii</i> RSA 493</a> has been reannotated for consistency. <a href="http://patric.vbi.vt.edu/organism/orthologGroups.php?organismId=2">Coxiella ortholog groups</a> and corresponding MSA are now available for comparative analysis across these five genomes. <a href="http://patric.vbi.vt.edu/organism/pathways.php?organismId=2">Metabolic pathways</a>  for these five genomes have been computed using Pathway Tools.   </p>
+<p>Two new <i>Rickettsia</i> genomes, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=7929"><i>Rickettsia</i> endosymbiont of <i>Ixodes scapularis</i></a> and <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=14045"><i>Rickettsia peacockii</i> str. Rustic</a>, have been added to the PATRIC database and have received PATRIC annotations. </p>
+<p>A previously added genome, <a href="http://patric.vbi.vt.edu/genome/overview.php?genomeId=6278"><i>Rickettsia rickettsii</i> str. Iowa</a>, has also received PATRIC annotations. <a href="http://patric.vbi.vt.edu/organism/orthologGroups.php?organismId=3">Rickettsia ortholog groups</a>, MSA and trees have been updated to include these new genomes. <a href="http://patric.vbi.vt.edu/organism/pathways.php?organismId=3">Metabolic pathways</a> for these three genomes have been computed using Pathway Tools.  </p>
+<h3>Viral Genome Data</h3>
+<p>Six new Coronavirus genomes, five Hepatitis E virus genomes and twelve new Lyssavirus genomes have been added to the PATRIC database and are released with their primary RefSeq/GenBank annotations.</p>
+<h3>Web Site Enhancements</h3>
+<dl>
+<dt>PubMed Integration Enhancements</dt>
+<dd>A new <i>Filter Publications by Scope</i> option has been added on the Literature/PubMed integration page<br />
+which allows users to see literature from other closely related genomes in the same organism class.<br />
+(<a href="http://patric.vbi.vt.edu/gene/literature.php?fid=226373&#038;dm=pubmed&#038;time=a&#038;kw=none&#038;scope=o">Example</a>)</dd>
+</dl>
+]]></content:encoded>
+			</item>
+		
+	<item>
+		<title>New Brucella data, Pathway Tools 12.5, Twelve new virus genomes</title>
+		<link>http://enews.patricbrc.org/13/new-brucella-data-pathway-tools-12-5-twelve-new-virus-genomes/</link>
+		<posttype>post</posttype>
+				<pubDate>10 Apr 2009</pubDate>
+		<dc:creator>admin</dc:creator>
+				<category><![CDATA[Data Releases & Updates]]></category>
+		<guid isPermaLink="false">http://news.patric.site/?p=13</guid>
+		<description><![CDATA[Two new brucella mass spec data sets and brucella host response data. Virus genomes added include six coronavirus genomes, five Hepatitis E genomes, one Lyssavirus genome. PATRIC has also upgraded to Pathway Tools v12.5 and enhanced the Gene Set Explorer.]]></description>
+			<content:encoded><![CDATA[<h3>Bacterial Genome Data</h3>
+<h4>Brucella Mass Spec Data</h4>
+<p>Two new mass spec datasets have been added for <a href="http://patric.vbi.vt.edu/genome/proteomics.php?genomeId=25"><i>Brucella melitensis</i> biovar Abortus 2308</a>  and <a href="http://patric.vbi.vt.edu/genome/proteomics.php?genomeId=7202"><i>Brucella abortus</i> S19</a> genomes. Results of these experiments are available as direct evidence under the  Experiment Data tab for these genomes  and as indirect evidence (via ortholog groups) for all other Brucella genomes.</p>
+<h4>Brucella Host Response Data</h4>
+<p>A new <a href="http://patric.vbi.vt.edu/organism/proteomics.php?organismId=1"><i>Brucella</i> Host Response Experiment Dataset</a> is now available under the Experiment Data tab for <i>Brucella</i>. </p>
+<h3>Metabolic Pathways</h3>
+<p>PATRIC has recently upgraded to Pathway Tools version 12.5.  Using this new version of Pathway Tools, we have recomputed metabolic pathways for all of the bacterial genomes annotated by PATRIC. Pathway data can be accessed using links provided under the Pathways tab for individual genomes. (Example: <a href="http://patric.vbi.vt.edu/genome/pathways.php?genomeId=7"><i>Brucella suis</i> 1330 Pathways</a>). </p>
+<h3>Viral Genome Data</h3>
+<p>Six new Coronavirus genomes have been added to the PATRIC database and fifteen new genomes have received manual curation. Ortholog groups, MSA, and trees have been updated to include newly curated genomes. PATRIC genome classification has been updated to include new genomes.</p>
+<p>Five new Hepatitis E genomes have been added to the PATRIC database and have received manual curation. Ortholog groups, MSA, and trees have been updated to include newly curated genomes. PATRIC genome classification has been updated to include new genomes.</p>
+<p>One new Lyssavirus genome has been added to the PATRIC database and has received manual curation. Ortholog groups, MSA, and trees have been updated to include newly curated genome. PATRIC genome classification has been updated to include new genome.</p>
+<h3>Web Site Enhancements</h3>
+<dl>
+<dt>Gene Set Explorer Enhancements</dt>
+<dd>We have enhanced Gene Set Explorer (GSE) to allow creation of new groups (gene sets) based on the area/items selected<br />
+from existing groups.</dd>
+</dl>
+]]></content:encoded>
+			</item>
+		
+	<item>
+		<title>3rd Summit on Systems Biology</title>
+		<link>http://enews.patricbrc.org/event/3rd-summit-on-systems-biology/</link>
+		<posttype>event</posttype>
+				<eventDate>June 16-19, 2009</eventDate>
+				<eventLocation>Richmond, Virginia</eventLocation>
+				<pubDate>20 Jun 2009</pubDate>
+		<dc:creator>admin</dc:creator>
+		<category>Event</category>
+<category>Meeting</category>
+		<guid isPermaLink="false">http://news.patric.site/?post_type=event&#038;p=33</guid>
+		<description><![CDATA[Dan Sullivan attended and gave a presentation entitled "Data Integration for Dynamic and Sustainable Systems Biology Resources: Challenges and Lessons Learned."]]></description>
+			<content:encoded><![CDATA[<p>Dan Sullivan attended and gave a presentation entitled &#8220;Data Integration for Dynamic and Sustainable Systems Biology Resources: Challenges and Lessons Learned.&#8221; <a href="http://patric.vbi.vt.edu/about/publications/SSB_2009_Sullivan.pdf">Abstract</a> <a href="http://patric.vbi.vt.edu/about/publications/SSB_2009_Sullivan_Slides.pdf">Slides</a></p>
+]]></content:encoded>
+			</item>
+		
+	<item>
+		<title>An Integrative Resource on Host-Pathogen Interactions</title>
+		<link>http://enews.patricbrc.org/event/an-integrative-resource-on-host-pathogen-interactions/</link>
+		<posttype>event</posttype>
+				<eventDate>April 2009</eventDate>
+				<eventLocation>Bilthoven, Netherlands</eventLocation>
+				<pubDate>10 Jun 2009</pubDate>
+		<dc:creator>admin</dc:creator>
+		<category>Event</category>
+<category>Meeting</category>
+		<guid isPermaLink="false">http://news.patric.site/?post_type=event&#038;p=37</guid>
+		<description><![CDATA[Dr. Bruno Sobral is giving three presentations: Department of Virology, Institute for Medical Microbiology and Hygiene in Frieburg, Germany.]]></description>
+			<content:encoded><![CDATA[<p>Dr. Bruno Sobral is giving three presentations: Department of Virology, Institute for Medical Microbiology and Hygiene in Frieburg, Germany; Viral Pathogens and Biosafety Unit in the Divsion of Immunology, Transplantation and Infectious Diseases at the San San Raffaele Scientific Institute in Milano, Italy; and Centre for Infectious Disease Control/RIVM in Bilthoven, Netherlands. April 2009.</p>
+]]></content:encoded>
+			</item>
+		
+	<item>
+		<title>13th International Symposium on Viral Hepatitis and Liver Disease</title>
+		<link>http://enews.patricbrc.org/event/13th-international-symposium-on-viral-hepatitis-and-liver-disease/</link>
+		<posttype>event</posttype>
+				<eventDate>March 20-24, 2009</eventDate>
+				<eventLocation>Washington, DC</eventLocation>
+				<pubDate>22 Feb 2009</pubDate>
+		<dc:creator>admin</dc:creator>
+		<category>Event</category>
+<category>Meeting</category>
+		<guid isPermaLink="false">http://news.patric.site/?post_type=event&#038;p=39</guid>
+		<description><![CDATA[Joshua Shallom, Senior Computational Biologist, attended and gave an oral presentation entitled &#8220;The PathoSystems Resource Integration Center (PATRIC): Database for Hepatitis A and E&#8221;. ( Slides )]]></description>
+			<content:encoded><![CDATA[<p>Joshua Shallom, Senior Computational Biologist, attended and gave an oral presentation entitled &#8220;The PathoSystems Resource Integration Center (PATRIC): Database for Hepatitis A and E&#8221;. ( <a href="http://patric.vbi.vt.edu/about/publications/ShallomISVHLD09x.pdf">Slides</a> )</p>
+]]></content:encoded>
+			</item>
+		
+	<item>
+		<title>Call for Proposals</title>
+		<link>http://enews.patricbrc.org/feature/call-for-proposals/</link>
+		<posttype>feature</posttype>
+				<subtitle>Driving Biological Projects</subtitle>
+				<pubDate>20 Jul 2010</pubDate>
+		<dc:creator>admin</dc:creator>
+				<guid isPermaLink="false">http://enews.patricbrc.org/?post_type=feature&#038;p=72</guid>
+		<description><![CDATA[PATRIC is seeking other projects that focus on infectious disease research related to human bacterial pathogens.]]></description>
+			<content:encoded><![CDATA[<p>PATRIC is seeking other projects that focus on infectious disease research related to human bacterial pathogens.</p>
+<p><a href="#">Send us a letter of intent.</a></p>
+]]></content:encoded>
+		<thumb><img width="239" height="164" src="http://enews.patricbrc.org/wp-content/uploads/2010/07/proposal_lead.jpg" class="attachment-239x164 wp-post-image" alt="proposal_lead" title="proposal_lead" /></thumb>
+		</item>
+	</channel>
+</rss>
+

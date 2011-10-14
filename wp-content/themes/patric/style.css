@@ -1,0 +1,958 @@
+/* @override 
+	http://enews.pathogenportal.net/wp-content/themes/patric/style.css
+	http://enews.patricbrc.site/wp-content/themes/patric/style.css
+	http://enews.patricbrc.org/wp-content/themes/patric/style.css
+*/
+
+/*   
+Theme Name: Patric Enews
+Theme URI: http://www.insidenewcity.com/
+Description: A Wordpress theme based on the PATRIC news site
+Author: John Williams	
+Author URI: http://www.insidenewcity.com/team/jwilliams/
+
+*/
+
+/* reset rules */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+h1 {
+	border-bottom: 2px #e9e9e9 solid;
+	margin-bottom: .8em;
+	color: #393939;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 62.5%;
+	
+}
+
+p {
+	margin: 0;
+}
+
+
+a:link {
+	color: #09456f;
+}
+
+a:hover {
+	color: #00f;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #09456f;
+}
+
+a:active {
+	color: #060;
+}
+
+/* design rules */
+
+
+
+/* @group global layout rules */
+
+#header:after, #toppage:after, 
+#footer:after, .block:after,
+.block-content:after, .post:after, 
+.event:after, .feature:after
+{
+	content:  ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.constrain {
+	width: 956px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.on-left {
+	float: left;
+}
+
+.on-right {
+	float: right;
+}
+
+input[type="button"],
+input[type="submit"] {
+	background-color: #0a4773;
+	border: 1px #000 solid;
+	border-left-color: #4e7b9a;
+	border-right-color: #153953;
+	border-bottom-color: #031e31;
+	border-top-color: #89a9c0;	
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 12px 5px 6px;
+	background: #0a4773 url('images/arrow-white-right.gif') scroll no-repeat right 50%;
+}
+
+form .options-link {
+	font-size: 1em;
+	color: #08466f;
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+/* @end global layout rules */
+
+/* @group color bands */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #32688D;
+}
+
+#toppage {
+	background-color: #ffffff;
+	border-bottom: 1px #fff solid;
+	padding-bottom: 2em;
+}
+
+#footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #32688D;
+	/* background gradient for capable browsers */
+	background-image: -moz-linear-gradient(-90deg, #09456f 0%, #32688D 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#09456f), to(#32688D));
+	color: #fff;
+}
+
+/* @end color bands */
+
+/* @group header styles */
+
+#header {
+	position: relative;
+	height: 80px;
+	z-index: 200;
+	background: #fff url('images/background-header.png') scroll repeat-x top left;
+}
+
+#masthead {
+	position: absolute;
+	background: transparent url('images/logo-patric.png') scroll no-repeat top left;
+	width: 357px;
+	height: 73px;
+	top: 12px;
+	left: 1px;
+	text-indent: -9999em;
+}
+
+#enewsFlag {
+	position: absolute;
+	background: transparent url('images/logo-enews.png') scroll no-repeat top left;
+	width: 245px;
+	height: 85px;
+	left: 268px;
+	display: block;
+	text-indent: -9999em;
+}
+
+/* @group mainnav styles */
+
+#mainnav, #mainnav .tab, #mainnav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainnav {
+	position: absolute;
+	right: 0;
+	top: 52px;
+	z-index: 100;
+}
+
+#mainnav .tab {
+	float: left;
+	padding: 0px 5px 0px 3px;
+	margin: 0 -5px 0 -3px;
+}
+
+/* 
+ * Unselected state of the tab, which includes the active tab 
+ * when the list is being hovered over, but the active tab is not hovered over
+ */
+
+#mainnav .tabtext {
+	display: block;
+	color: #09456f;
+	text-decoration: none;
+	line-height: 32px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px #dfdfdf solid;
+	border-bottom-width: 0px;
+	margin-left: 2px;
+	background-color: #fff;
+
+	/* background gradient for capable browsers */
+
+	background-image: -moz-linear-gradient(-90deg, #ffffff 0%, #e1e1e1 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#e1e1e1));
+	-moz-border-radius: 4px 4px 0 0;	
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+#mainnav .tab span {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* blue arrow added to menu items that are a dropdown. */
+ul#mainnav .tab.drop span {
+	background: transparent url('images/dropdown-arrow-cyan.gif') scroll no-repeat bottom right;
+}
+
+/* Changes which indicate an active or hovered tab state, includes the current tab,
+   the current tab when hovered over, and any other tab when hovered over. */
+
+
+#mainnav .active,
+#mainnav .open {
+	z-index: 90;
+	background: url('images/mainnav-active-fillet-left.png') bottom left no-repeat,
+				url('images/mainnav-active-fillet-right.png') bottom right no-repeat;
+}
+
+/* Similiar rules applied to the text inside the tabs. */
+
+
+#mainnav .active .tabtext,
+#mainnav .tab:hover .tabtext,
+#mainnav .open .tabtext
+ {
+	background-color: #114c75;
+	background-image: -moz-linear-gradient(-90deg, #32688d 0%, #114c75 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#32688d), to(#114c75));
+	border-width: 1px;
+	border-color: #114c75;
+	border-bottom-width: 1px;
+	border-bottom-color: #114c75;
+	color: #fff;
+}
+
+
+/* @group dropdown menu styles */
+
+#mainnav .submenu {
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+	border: 5px #0e4973 solid;
+	border-top-width: 4px;
+	-moz-border-radius: 0 0 6px 6px;	
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;	
+	width: 200px;
+	font-size: 1.2em;
+}
+
+#mainnav .open .submenu {
+	z-index: 90;
+}
+
+#mainnav a.menu-close {
+	border-width: 0px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 95%;
+	padding: 5px;
+	height: 10px;
+}
+
+#mainnav a.menu-close img {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border-width: 0;
+}
+
+#mainnav a.menu-close.standalone {
+	border-width: 0px;
+	display: block;
+	position: relative;
+	padding: 5px;
+
+}
+
+#mainnav a.menu-close.standalone img {
+
+}
+
+#mainnav .submenu.wide {
+	width: 300px;
+}
+
+#mainnav ul.left,
+#mainnav ul.right {
+	float: left;
+	width: 50%;
+}
+
+#mainnav .tab:hover .submenu,
+#mainnav .tab.open .submenu {
+	display: block;
+	position: absolute;
+}
+
+#mainnav .twocol {
+	border-bottom: 1px #e5e1e2 solid;
+}
+
+#mainnav .submenu p,
+#mainnav .submenu li {
+	border-bottom: 1px #e5e1e2 solid;
+	background-color: #fff;
+	background-image: -moz-linear-gradient(-90deg, #ffffff 0%, #f8f8f8 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f8f8f8));
+}
+
+#mainnav .submenu li.blank {
+	background-image: none;
+	background-color: transparent;
+}
+
+#mainnav .twocol li:last-child {
+	border-bottom-width: 0;
+}
+
+#mainnav .submenu p {
+	padding: 5px 11px;
+	color: #666666;
+	font-weight: bold;
+}
+
+#mainnav .submenu li a {
+	padding: 5px 11px;
+	text-decoration: none;
+	display: block;
+	background: transparent url('images/link-arrow-cyan.gif') scroll no-repeat 11px 9px;
+	padding-left: 19px;
+}
+
+#mainnav .submenu ul.left li a {
+	border-right: 1px #e5e1e2 solid;
+}
+
+#mainnav .submenu li:hover {
+	background-color: #114c75;
+	background-image: -moz-linear-gradient(-90deg, #32688d 0%, #114c75 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#32688d), to(#114c75));
+	border-bottom-color: #114c75;
+}
+
+#mainnav .submenu li:hover a {
+	color: #fff;
+}
+
+/* @end dropdown menu styles */
+
+/* @end mainnav styles */
+
+/* @group secondarynav styles */
+
+ul#secondarynav, ul#secondarynav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul#secondarynav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+}
+
+ul#secondarynav li {
+	float: left;
+	padding: 2px 04px 6px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+ul#secondarynav li.noborder a {
+	border-width: 0;
+}
+
+ul#secondarynav li a {
+	color: #17a1c3;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-right: 1px #dfdfdf solid;
+	padding-right: 6px;
+}
+
+ul#secondarynav li a:hover {
+	text-decoration: underline;
+}
+
+ul#secondarynav li.login {
+	background-color: #0a4670;
+	background-image: -moz-linear-gradient(-90deg, #32688d 0%, #114c75 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2b6288), to(#0a4670));
+	height: 22px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius: 0 0 4px 4px;
+}
+
+ul#secondarynav li.login .login-id {
+	display: block;
+	float: left;
+	margin-right: 1em;
+	color: #fff;
+	line-height: 22px;
+	padding-left: 5px;
+}
+
+ul#secondarynav li.login a {
+	float:right;
+	border-width: 0;
+	color:  #79c4d8;
+	background: transparent url('images/link-arrow-cyan.gif')scroll no-repeat right 50%;
+	padding-right: 7px;
+	margin-right: 11px;
+}
+
+#eNewsMenu, #citeMenu, #subscribeMenu, #feedbackMenu, #RSS {
+	padding-left: 24px;
+	background: transparent url('images/icon_cite.png') scroll no-repeat 0 3px;
+}
+
+#eNewsMenu {
+	background-image: url('images/icon_enews.png');
+}
+
+#citeMenu {
+	background-image: url('images/icon_cite.png');
+}
+
+#feedbackMenu {
+	background-image: url('images/icon_feedback.png');
+}
+
+#subscribeMenu {
+	background-image: url('images/icon_subscribe.png');
+}
+
+#RSS {
+	background-image: url('images/icon-rss.png');
+}
+
+span.at300bs.at15t_compact {
+	margin-top: -2px;
+}
+
+/* @end secondarynav styles */
+
+/* @end header styles */
+
+/* @group toppage */
+
+#toppage {
+	padding-top: 14px;
+	position: relative;
+
+}
+
+#toppage .constrain {
+	position: relative;
+	background: transparent url('images/background-page-border.png') scroll repeat-y 255px 0;
+	min-height: 314px;
+}
+
+#toppage #leftColumn {
+	width: 238px;
+	float: left;
+	left: 0; top: 0;	
+}
+
+#toppage #rightColumn {
+	float: left;
+	width:  600px;
+	margin-left: 33px;
+}
+
+/* @end toppage styles */
+
+/* @group sidebar */ 
+
+.sidebar-block {
+	background-color: #dbe8ee;
+	border: 1px #000 solid;
+	border-top-color: #9dbdc8;
+	border-left-color: #aec9d2;
+	border-right-color: #e7eff4;
+	border-bottom-color: #edf4f7;
+	margin-bottom: 17px;
+	padding: 14px 12px;
+}
+
+.sidebar-block h2 {
+	text-transform: uppercase;
+	color: #185178;
+}
+
+.vertnav, .vertnav li {
+	margin: 0; padding: 0; list-style: none;
+}
+
+.vertnav li {
+	padding: 5px 0 4px 0;
+}
+
+.vertnav a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 1.1em
+}
+
+.vertnav a:hover {
+	text-decoration: underline;
+	color: #09456F;
+}
+
+.vertnav li.nav-data-release a {
+	padding-left: 24px;	
+	background: transparent url('images/icon-datarelease.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-events a {
+	padding-left: 24px;	
+	background: transparent url('images/icon-events.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-presentations a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-meetings.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-publications a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-publications.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-webupdate a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-webupdates.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-videos a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-videos.png') scroll no-repeat 0 0;
+}
+
+.vertnav li.nav-patric-in-the-news a{
+	padding-left: 24px;	
+	/*background: transparent url('images/icon-patricinthenews.png') scroll no-repeat 0 0;*/
+	background: transparent url('images/icon-inthenews.png') scroll no-repeat 0 3px;
+}
+
+.vertnav li.nav-uncategorized a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-general.png') scroll no-repeat 0 1px;
+}
+
+.vertnav li.nav-all-news a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-enews.png') scroll no-repeat 0 0;
+}
+
+.vertnav ul.children {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.vertnav ul.children li {
+	border-left: 1px #ccc solid;
+	padding-left: 1em;
+}
+
+.vertnav.textonly li{
+	padding: .5em 0
+}
+
+.vertnav.textonly li a{
+	line-height: 1.2;
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+.vertnav.textonly ul {
+
+	margin-top: .5em;
+	border-bottom: 1px #ccc solid;
+}
+
+.vertnav li.current_page_item a,
+.vertnav li.active-category a {
+	color: #393939;
+	cursor: text;
+}
+
+
+.sidebar-block .vertnav, 
+
+/* @end */
+
+/* @group footer styles */
+
+#footer a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer .left {
+	width: 473px;
+	float: left;
+	text-align: right;
+}
+
+#footer .right {
+	width: 471px;
+	float: right;
+	text-align: left;
+}
+
+#footer p {
+	line-height: 1.5;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer a#linkNIH,
+#footer a#linkNIAID
+{
+	margin-top: 4px;
+	margin-right: 7px;
+	display: block;
+	float: left;
+	width: 41px;
+	height: 41px;
+}
+
+#footer a#linkNIH span,
+#footer a#linkNIAID span {
+	display: block;
+	text-indent: -9999em;
+}
+
+#footer a#linkNIH {
+	background: url('images/logo-nih.png') scroll no-repeat top left;
+}
+
+#footer a#linkNIAID {
+	background: url('images/logo-niaid.png') scroll no-repeat top left;
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin: 1em 0 1em;
+}
+
+.entry-content table {
+	border: 1px #a4bac1; solid;
+	border-collapse: collapse;
+	margin: 2em 0;
+}
+
+.entry-content table td {
+	padding: 3px 5px;
+}
+
+.entry-content thead th,
+.entry-content thead td {
+	color: #205072;
+	background-color: #c8d3d7;
+	border-color: #c8d3d7;
+}
+
+/* @end footer styles */
+
+/* @group post styling */
+
+.post, .feature, .event {
+	margin-bottom: 1em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px #e2e2e2 solid;
+	padding-left: 55px;
+	clear: both;
+	position: relative;
+}
+
+.sticky {
+	padding-left: 0;
+}
+
+.sticky .post-categories {
+	display: none;
+}
+
+.feature {
+	padding-left: 0;
+}
+
+.sticky .entry-meta {
+	display:  none;
+}
+
+#rightColumn .entry-content {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 1.2;
+}
+
+
+#rightColumn .entry-summary {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 1.2;
+}
+
+#rightColumn h2 {
+	font-size: 1.6em;
+	margin-bottom: .4em;
+}
+
+#rightColumn h2 a {
+	text-decoration: none;
+}
+
+#rightColumn h2 a:hover {
+	text-decoration: underline;
+}
+
+.entry-meta {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: .4em;
+	color: #333;
+}
+
+.entry-meta.revised {
+	color: #595959;
+	font-weight: normal;
+	font-style: italic;
+	border-top: 1px #e0e0e0 solid;
+	padding-top: .2em;
+	text-align: right;
+	font-size: 10px;
+}
+
+.sticky .entry-meta {
+	display: none;
+}
+
+.categories-list, .categories-list li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.categories-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 46px;
+
+}
+
+.sticky .categories-list {
+	display: none;
+}
+
+.categories-list li {
+	width: 18px;
+	height: 18px;
+	float: right;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	overflow: hidden;
+	background: url('images/icon-meetings.png') scroll no-repeat top right;
+}
+
+.categories-list li a {
+	display: block;
+	height: 18px;
+	text-indent: -9999em;
+}
+
+.categories-list li.categorylist-publications {
+	background-image: url('images/icon-publications.png')
+}
+
+.categories-list li.categorylist-events {
+	background-image: url('images/icon-events.png');
+}
+
+.categories-list li.categorylist-data-release {
+	background-image: url('images/icon-datarelease.png');
+}
+
+.categories-list li.categorylist-webupdate {
+	background-image: url('images/icon-webupdates.png')
+}
+
+.categories-list li.categorylist-patric-in-the-news {
+	background-image: url('images/icon-inthenews.png');
+	background-position: left 1px;
+}
+
+.categories-list li.categorylist-uncategorized {
+	background-image: url('images/icon-general.png')
+}
+
+.post:last-child, .feature:last-child, .event:last-child {
+	border-bottom-width: 0;
+}
+
+.post-thumbnail-container {
+	display: none;
+}
+
+h1.publications {
+	background: url('images/icon-publications.png') scroll no-repeat left 2px;
+	padding-left: 25px;
+}
+
+h1.events {
+	background: url('images/icon-events.png') scroll no-repeat left 2px;
+	padding-left: 25px;	
+}
+
+h1.data-release {
+	background: url('images/icon-datarelease.png') scroll no-repeat left 2px;
+	padding-left: 25px;
+}
+
+h1.webupdate {
+	background: url('images/icon-webupdates.png') scroll no-repeat left 2px;
+	padding-left: 25px;	
+}
+
+h1.presentations {
+	background: url('images/icon-meetings.png') scroll no-repeat left 2px;
+	padding-left: 25px;	
+}
+
+h1.patric-in-the-news {
+	background: url('images/icon-inthenews.png') scroll no-repeat left 4px;
+	padding-left: 25px;	
+}
+
+h1.patric-uncategorized {
+	background: url('images/icon-general.png') scroll no-repeat left 2px;
+	padding-left: 25px;	
+}
+
+
+.sticky .post-thumbnail-container,
+.feature .post-thumbnail-container,
+.post-single .post-thumbnail-container {
+	display: block;
+}
+
+.attachment-post-thumbnail {
+	border: 1px #aeb9c2 solid;
+	float: left;
+    vertical-align: middle;
+	margin: 0 1em 1em 0;
+}
+
+.post-single .attachment-post-thumbnail {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.entry-content dl {
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+.entry-content dt {
+	font-style: oblique;
+	border-bottom: 3px #ccc double;
+	margin-bottom: 1em;
+}
+
+.entry-content dt {
+	font-style: oblique;
+	border-bottom: 3px #ccc double;
+	margin-bottom: 1em;
+}
+
+.entry-content ul,
+.entry-content ul li,
+.entry-content ol,
+.entry-content ol li {
+	margin:  0;
+	padding: 0;
+}
+
+.entry-content ul,
+.entry-content ol {
+	margin: 1em 0 1em 2em;
+}
+
+.entry-content ul ul,
+.entry-content ul ol,
+.entry-content ol ul,
+.entry-content ol ol {
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.entry-content ul li,
+.entry-content ol li {
+
+	margin-bottom: .5em;
+}
+
+.entry-tags {
+	font-size: 1.2em;
+}
+
+
+
+/* @end */
+

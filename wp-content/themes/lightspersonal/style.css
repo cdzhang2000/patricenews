@@ -1,0 +1,663 @@
+/*
+Theme Name:	Lights Personal Theme
+Theme URI: 	http://www.networksolutions.com/custom-website-packages/
+Description: 	Custom Personal Theme by Network Solutions&trade;.
+Version: 		1.00
+Author:		Network Solutions
+Author URI:	http://www.networksolutions.com
+Tags: fixed-width, two-columns, white, red, left-sidebar, threaded-comments
+*/
+
+/*--	IMPORTANT NOTE.
+	
+	please be sure when editing this file that you are making the correct edits,
+	and have retained a back up copy in case any changes should cause errors or
+	other breaks in your design. Network Solutions makes no claim of support for
+	individual edits, and this theme is provided as is.
+
+--*/
+
+
+/*-- Required Classes --*/
+	.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	.alignleft {
+		float: left;
+		}
+	.alignright {
+		float: right;
+		}
+
+/*-- Clear Defaults --*/
+	:link,
+	:visited {
+		text-decoration: none;
+		}
+	ul,ol {
+		list-style: none;
+		}
+	ul,ol,dl,li,dt,dd,
+	h1,h2,h3,h4,h5,h6,
+	pre,form,body,html,
+	p,blockquote,
+	fieldset,input {
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		}
+	a img {
+		border: none;
+		}
+
+/*-- Links  --*/
+	a:link, a:visited { color: #772124; }
+	.page a:link, .page a:visited { font-weight: bold; }
+	a:hover {
+		text-decoration: underline;
+		color: #58181b;
+		font-family:Tahoma, Geneva, sans-serif;
+		}
+
+/*-- Core Layout Elements --*/
+	body {
+		background:#CCCCCC url(images/bg-body.jpg) center top repeat-x;
+		color: #000000;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size: 14px;
+		}
+		#wrapper{
+			background:transparent url(images/bg-wrapper.jpg) center top repeat-y;
+			margin: 0 auto;
+			text-align: left;
+			width: 890px;
+			}
+			#content{
+				display:block;
+				float: left; 
+				margin: 5px 20px 20px 0;
+				width: 635px;
+				}
+			#sidebar { 
+				display:block;
+				float: left; 
+				margin:0px 10px 0px 20px;
+				width: 200px;
+				}
+			#footer { 
+				background:transparent url(images/bg-footer.jpg) top center no-repeat;
+				clear:both;
+				color: #666666;
+				display:block;
+				height:70px;
+				position:relative;
+				width:890px;
+				}
+
+/*-- Header  --*/
+	#header {
+		background:transparent url(images/header.jpg) top center no-repeat;
+		display:block;
+		height:121px;
+		position:relative;
+		width:890px;
+		clear:both;
+		}
+
+	/*-- Title --*/
+		h1#title {
+			font-size: 54px;
+			font-weight: 700;
+			height:60px;
+			left:25px;
+			position:absolute;
+			top:20px;
+			width:600px;
+			}
+		h1#title a:link,
+		h1#title a:visited  {
+			color: #FFFFFF;
+			}
+		h1#title a:hover {
+			color: #FF0000;
+			text-decoration: none;
+			}
+
+	/*-- Description --*/
+		h2#description {
+			color: #FF0000;
+			font-size: 14px;
+			font-weight: 700;
+			height:20px;
+			left:30px;
+			position:absolute;
+			top:80px;
+			width:600px;
+			}
+
+	/*-- Header Nav --*/
+			 ul#nav {
+				list-style: none;
+				padding: 1px 20px 0px;
+				display:block;
+				width:100%;
+				font-size:16px;
+				background:transparent url(images/bg-nav-top.jpg) top center no-repeat;
+				display:block;
+				width:850px;
+				clear:both;
+				}
+				ul#nav li {
+					display:inline;
+					height:31px;
+					}
+					ul#nav .page_item a:link,
+					ul#nav .page_item a:visited {
+						color: #333333;
+						display:inline;
+						line-height:31px;
+						padding:5px 20px;
+						text-decoration: none;
+						}
+					ul#nav .page_item a:hover {
+						background:url(images/bg-nav-hover.jpg) left center no-repeat;
+						color: #FFFFFF;
+						text-decoration: none;
+						}
+
+	/*-- Search Box --*/
+		#search_form {
+			position:absolute;
+			right:27px;
+			top:20px;
+			}
+		#search_form input {
+			margin: 10px 0 0 0;
+			}
+		#search_form input { 
+			padding: 4px; 
+			width: 188px;
+			border: none;
+			background: transparent;
+			color: #888;
+			}
+		#search_form input:focus {
+			}
+		#search_form input#searchsubmit {
+			padding: 2px 10px;
+			}
+
+/*-- Post Styling --*/
+	/*-- Post Header --*/
+		.post-header {
+			display:block;
+			width:635px;
+			background:transparent url(images/bg-stripe.jpg) top left repeat;
+			border:1px solid #A6A6A6;
+			clear:both;
+			height:44px;
+			position:relative;
+			}
+			.post-header .header-top,
+			.post-header .header-bottom {
+				display:block;
+				width:100%;
+				clear:both;
+				}
+				.post-header .header-top {
+					background:transparent url(images/divider.jpg) bottom center repeat-x;
+					height:25px;
+					}
+
+			/*-- Post Titles --*/
+				.post-header h1,
+				.post-header h2 {
+					display:block;
+					float:left;
+					font-size: 18px;
+					font-weight:400;
+					padding:2px;
+					}
+					.post-header h1 a:link
+					.post-header h1 a:visited,
+					.post-header h1 a:hover,
+					.post-header h2 a:link,
+					.post-header h2 a:visited,
+					.post-header h2 a:hover  {
+						color: #9B0000;
+						}
+
+			/*-- Post Author --*/
+				.post-header .author {
+					display:block;
+					float:right;
+					margin:6px 2px 0px 0px;
+					}
+
+			/*-- Post Comments --*/
+				.comments {
+					display: block;
+					color: #9B0000;
+					float:left;
+					font-size: 11px;
+					font-weight:700;
+					margin:0px 0px 2px 3px;
+					}
+				.comments a,
+				.comments a:hover {
+					color: #9B0000;
+					font-weight:400;
+					}
+					
+			/*-- Post Date --*/
+				.date {
+					float: right;
+					color: #4D0000;
+					font-size: 11px;
+					font-weight: normal;
+					position:absolute;
+					right:2px;
+					top:26px;
+					}
+				.date span {
+					color: #9B0000;
+					}
+
+	/*-- Post Information --*/
+
+	/*-- Post Body --*/
+		.post-content {
+			font-size: 12px;
+			margin:5px;
+			}
+
+		/*-- Post Headers --*/
+			.post-content h2,
+			.post-content h3,
+			.post-content h4 {
+				font-size: 14px;
+				padding: 10px 0 5px 0;
+				}
+			.pos-contentt h3,
+			.post-content h4 { 
+				font-size: 12px;
+				}
+		code {
+			padding: 5px;
+			background:transparent url(images/bg-stripe.jpg);
+			color: #000000;
+			font-family: "Courier New", Courier, monospace; 
+			}
+
+	/*-- Highlights --*/
+		blockquote,
+		.float-quote,
+		.highlight-box {
+			display: block;
+			padding: 20px 10px;
+			margin: 10px 5px;
+			font-size: 12px;
+			font-style: italic;
+			color: #4E0000;
+			background:transparent url(images/bg-stripe.jpg);
+			border:1px solid #A6A6A6;
+			}
+			.post-content .highlight-box p {
+				margin: 10px;
+				font-size: 14px;
+				}
+				
+	/*-- Post Lists --*/
+		.post-content ul,
+			#comments ul {
+				margin: 0px 0px 10px 10px;
+				}
+			.post-content ul li,
+			#comments ul li {
+				display: block;
+				margin: 5px 0px 0px 0px;
+				padding: 0px 0px 0px 15px;
+				}
+			.post-content ol
+			#comments ol {
+				list-style-type: decimal;
+				list-style-position: inside;
+				margin: 0px 0px 10px 10px;
+				}
+			.post-content ol li ol li,
+			#comments ol li ol li { 
+				font-size: .9em;
+				list-style-type: lower-roman; 
+				}
+			.post-content ol li,
+			#comments ol li {
+				margin: 5px 0 0 0;
+				}
+	
+	/*-- Post Navigation --*/
+		.navigation {
+			padding: 10px 0;
+			font-size: 12px;
+			display:block;
+			margin:10px 0px;
+			border:1px solid #A6A6A6;
+			background:transparent url(images/bg-stripe.jpg);
+			}
+			.navigation .old {
+				float:left;
+				}
+			.navigation .new {
+				float:right;
+				}
+
+	/*-- Post Footer --*/
+		.post-footer {
+			display:block;
+			background:transparent url(images/bg-stripe.jpg) top center repeat;
+			border:1px solid #A6A6A6;
+			padding: 0px;
+			font-size: 11px;
+			color: #9B0000;
+			height:24px;
+			}
+			.post-footer a:link, .post-footer a:visited {
+				color: #9B0000;
+				font-style: normal;
+				}
+			.post-footer a:hover {
+				color: #9B0000;
+				}
+				
+		/*-- Footer Components --*/	
+			.post-footer p.tags { 
+				float: left; 
+				text-align: left;
+				line-height:22px;
+				padding:0px 0px 0px 3px;
+				}
+			.post-footer p.categories {
+				float: right; 
+				text-align: right;
+				line-height:22px;
+				padding:0px 3px 0px 0px;
+				}
+				.post-footer p strong {
+					color:#4E0000;
+					}
+
+/*-- Pages --*/
+	h1.pagetitle, h2.pagetitle {
+		margin: 0px 0px 5px 0px;
+		padding: 0px 0px 5px 0px;
+		color:#9A0000;
+		font-size: 18px;
+		border-bottom: 2px solid #9A0000;
+		}
+
+/*-- Archives List --*/
+	div#archive-info {
+		display:block;
+		float: left;
+		width:150px;
+		text-indent:5px;
+		}
+	div#archive-comments {
+		display:block;
+		float: right;
+		width:75px;
+		}
+	.entries { 
+		font-size: 12px;
+		clear: both; 
+		}
+	.entries ul {
+		margin: 0px;
+		padding: 5px 0px 0px;
+		}
+	.entries ul li a {
+		display: block;
+		margin: 0px;
+		padding: 5px 0px 8px 0px;
+		border-top:1px solid #A6A6A6;
+		}
+	.entries ul li a:hover {
+		background:#EFEFEF;
+		text-decoration: none;
+		}
+	.entries span {
+		display: block;
+		text-align: right;
+		}
+	.entries span.archdate,
+	.entries a:hover span.archdate  {
+		float: left;
+		margin: 0px 15px 0px 0px;
+		padding: 0px 0px 0px 5px;
+		width: 60px;
+		color: #9A0000;
+		text-align:left;
+		}
+	.entries span.comments_number{
+		float: right;
+		margin: 0px 8px 0px 0px;
+		width: 45px;
+		color: #4E0000;
+		}	
+
+/*-- Sidebar --*/
+	.widget {
+		background:transparent url(images/bg-stripe.jpg) top left repeat;
+		border:1px solid #A6A6A6;
+		display:block;
+		width:200px;
+		margin:5px 0px;
+		padding:0px 0px 5px 0px;
+		}
+
+	/*-- Widget Title --*/
+		h3.widgettitle {
+			padding: 1px 0px 3px;
+			text-align:center;
+			font-size: 16px;
+			font-weight: 700;
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			background:transparent url(images/divider.jpg) bottom center repeat-x;
+			color:#9A0000;
+			}
+
+	/*-- Widget Lists --*/
+		ul li.widget ul {
+			margin: 0px;
+			}
+			ul li.widget ul li {
+				padding: 2px 0px;
+				}
+				ul li.widget ul li a {
+					color:#4E0000;
+					display: block;
+					font-size:12px;
+					height:18px;
+					line-height:18px;
+					margin:0px 5px;
+					}
+				ul li.widget ul li a:hover {
+					background:transparent url(images/li-a-hover.gif)left top no-repeat;
+					color:#9B0000;
+					padding: 0 0 0 15px;
+					text-decoration:none;
+					}
+		ul#recentcomments {
+			margin:0px 5px;
+			}
+			ul#recentcomments li a:hover {
+				background:none;
+				}
+
+	/*--Calendar --*/
+		#wp-calendar {
+			margin:0px auto;
+			}
+	/*-- Tags --*/
+		#tag_cloud a {
+			margin:0px 0px 0px 4px;
+			}
+
+/*-- Comments --*/
+	/*-- Top --*/
+		.comment-no {
+			display: block;
+			padding: 10px;
+			font-weight:700;
+			}
+		.comment-no span {
+			color: #4E0000;
+			}
+		a#leavecomment {
+			padding-left: 10px;
+			color:#9B0000;
+			}
+		
+	/*-- Body --*/
+		div.con-single, li.comment {
+			padding: 20px 10px;
+			border-top: 1px solid #999999;
+			display:block;
+			clear:both;
+			}
+		li.comment {
+			padding: 10px;
+			}
+		li.comment.depth-2 {
+			margin: 0px 0px 10px 0px;
+			border: 1px solid #CCCCCC;
+			background: #fff;
+			}
+		ul.children {
+			margin: 10px 0 0 20px;
+			clear: both;
+			}
+		div.alt,
+		li.thread-odd {
+			background: #fff;
+			}
+		div.admin,
+		li.comment.bypostauthor,
+		li.comment li.comment.bypostauthor,
+		li.comment.comment-author-admin,
+		li.comment li.comment.comment-author-admin {
+			background: #DCDFC2;
+			}
+			
+	/*-- Comment Content --*/
+		div.con-gravitar {
+			float: left;
+			width: 80px;
+			margin: 0;
+			text-align: right;
+			}
+		div.con-body {
+			float: right;
+			width: 510px;
+			font-size: 11px;
+			}
+			ul.children div.c-body {
+				width: 500px;
+				}
+			div.con-body p {
+				margin: 0px 0px 5px 0px;
+				}
+				
+			/*-- Comment Header --*/'
+				div.con-head {
+					margin: 0 0 10px 0;
+					font-weight: bold;
+					}
+				div.con-date {
+					float: right;
+					color: #4E0000;
+					text-transform: uppercase;
+					}
+				div.con-date span {
+					color: #4E0000;
+					font-weight: bold;
+					}
+					.con-permalink a:link,
+					.con-permalink a:visited {
+						color: #9B0000;
+						font-size: 10px;
+						text-transform: uppercase;
+						}
+						
+		/*-- Reply --*/
+			div.reply,
+			div.cancel-comment-reply {
+				float: right;
+				}
+			div.reply {
+				padding-bottom: 10px;
+				}
+			div.reply a:link,
+			div.reply a:visited {
+				text-transform: uppercase;
+				}
+				
+/*-- Form --*/
+	form#commentform {
+		clear:both;
+		display:block;
+		margin: 10px 0px;
+		}
+		#respond {
+			font-size: 12px;
+			}
+			h4#postcomment {
+				margin: 20px 0;
+				padding: 0 0 5px 0;
+				font-size: 12px;
+				color: #4E0000;
+				border-bottom: 1px solid #999999;
+				}
+			form#commentform label.comment-field {
+				display: block;
+				margin: 10px 0 5px 0;
+				}
+			input.text-input,
+			form#commentform textarea {
+				padding: 4px 2px;
+				background: #EFEFEF;
+				border: 1px solid #CCCCCC;
+				width: 635px;
+				}
+			input#author,
+			input#email,
+			input#url {
+				width: 350px;
+				}
+			form#commentform input:focus,
+			form#commentform textarea:focus {
+				background: #FFFFFF;
+				}
+			form#commentform input#submit {
+				padding: 5px;
+				width: 150px; 
+				}
+			form#commentform p.privacy {
+				font-size: 10px;
+				margin: 10px 0px;
+				color: #666666;
+				}
+
+/*-- Pingbacks and Trackbacks --*/
+	h3.pinghead {
+		font-size: 10px;
+		color: #4E0000;
+		}
+	ol.pinglist {
+		list-style-type: decimal;
+		list-style-position: inside;
+		margin: 10px;
+		font-size: 10px;
+		}
+

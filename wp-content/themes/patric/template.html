@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Patric Home Page Prototype</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<!--
+	  ** Library Loading using Google's AJAX Library API
+	  ** See http://code.google.com/apis/ajaxlibs/documentation/index.html
+	  **
+	  ** The API key is bound to the domain name. Calls will fail
+	  ** without a valid API key. Generate one here:
+	  ** http://code.google.com/apis/ajaxsearch/signup.html
+	-->
+	<script src="http://www.google.com/jsapi?key=ABQIAAAALFPYIsvMh1ai9eXeVaUj3BSJloMJkdsZXXM6Uj1tDGAL8bJuZhTbL20ti0h1QTTHOPyEfC_WnuG-sQ" type="text/javascript"></script>
+	<!--
+	  ** Load external data
+	 -->
+	<!-- this is the static data set -->
+	<script src="/static/bacteriacloud_data.js"></script>
+	<script src="/static/enews_data.js"></script>
+	<script src="/static/watchlist_data.js"></script>
+	<!-- this is the dynamic data set 
+	<script src="http://enews.patricbrc.org/php/bacteria.php"></script>
+	<script src="http://enews.patricbrc.org/php/vbi.php"></script>
+	<script src="http://enews.patricbrc.org/php/rssAdapter.php"></script>	
+	-->
+	<!--
+	  ** Place data loaded above and set up other interactions.
+	  -->
+	<script src="/js/frontpage-prototype.js" type="text/javascript"></script>
+	<!-- 
+	  ** Stylesheet calls
+	  -->
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/css/frontpage.css" type="text/css" />
+	<script src="/js/ie-css3.js" type="text/javascript"></script>
+	<!-- 
+	  ** IE "fix" stylesheets
+	  -->
+	<!--[if IE]>
+		<link rel="stylesheet" href="/cssie/ie-global.css" type="text/css" />
+	<![endif]-->
+	<!-- [if IE 8]>
+		<link rel="stylesheet" href="/cssie/ie-8.css" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="/cssie/ie-7.css" type="text/css" />
+	<![endif]-->
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="/cssie/ie-6.css" type="text/css" />
+	<![endif]-->
+</head>
+<body>
+<!--
+	#header contains the logo, main, and secondary navigation
+-->
+<div id="header">
+	<div class="constrain">
+		<div id="masthead">PATRIC <span class="sub">Pathosystems Resouce Integration Center</span></div>
+		<ul id="mainnav">
+			<li class="tab active"><a href="#" class="tabtext"><span>Home</span></a></li>
+			<li class="tab drop"><a href="#" class="tabtext"><span>Organisms</span></a>
+				<div class="submenu wide">
+					<a href="#" class="menu-close" style="display: none"><img src="/images/menu-close.gif"></a>
+					<p>Genera Containing NIAID Category A-C / Emerging / Re-emerging Bacteria Pathogens:</p>
+					<div class="twocol block">
+						<ul class="left">
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1386">Bacillus</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=773">Bartonella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=138">Borrelia</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=234">Brucella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=32008">Burkholderia</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=194">Campylobacter</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=83553">Chlamydophila</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1485">Clostridium</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=776">Coxiella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=943">Ehrlichia</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=561">Escherichia</a></li>
+						</ul>
+						<ul class="right">
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=262">Francisella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=209">Helicobacter</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1637">Listeria</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1763">Mycobacterium</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=780">Rickettsia</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=590">Salmonella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=620">Shigella</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1279">Staphylococcus</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=1301">Streptococcus</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=662">Vibrio</a></li>
+							<li><a href="/portal/portal/patric/Taxon?cType=taxon&amp;cId=629">Yersinia</a></li>
+							<!-- blank cell; to be used if one column is shorter than the other:
+							<li class="blank">&nbsp;</li>
+							-->
+						</ul>
+					</div>
+					<p>Complete Lists of Bacteria:</p>
+					<ul>
+						<li><a href="http://patricbrc.org/portal/portal/patric/Bacteria">All Bacteria</a></li>
+						<li><a href="http://patricbrc.org/portal/portal/patric/Pathogens">All Bacteria Pathogens</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="tab drop"><a href="#" class="tabtext"><span>Searches &amp; Tools</span></a>
+				<div class="submenu">
+					<a href="#" class="menu-close" style="display: none"><img src="/images/menu-close.gif"></a>
+					<p>Searches:</p>
+					<ul>
+						<li><a href="/portal/portal/patric/GenomeFinder?cType=taxon&amp;cId=&amp;dm=" 
+							   title="Genome Finder allows you to locate specific genome(s) based on taxonomy, keyword, replicon size, sequence status, and/or sequence type.">Genome Finder</a></li>
+						<li><a href="/portal/portal/patric/GenomicFeature?cType=taxon&amp;cId=&amp;dm="
+							   title="Feature Finder allows you to locate specific features(s) based on taxonomy, feature type, keyword, sequence status, and/or annotation type.">Feature Finder</a></li>
+						<li><a href="/portal/portal/patric/PathwayFinder?cType=taxon&amp;cId=&amp;dm="
+							   title="Pathway Finder allows you to identify a set of pathways based on taxonomy, EC number, pathway name, and/or annotation type.">Pathway Finder</a></li>
+						<li><a href="/portal/portal/patric/FIGfamSorter?cType=taxon&amp;cId=&amp;dm="
+							   title="Protein Family Sorter allows you to identify and filter sets of protein families associated with specified Phylum, Classes, Orders, Families, Genus, Species or Genomes.">Protein Family Sorter</a></li>
+					</ul>
+					<p>Tools</p>
+					<ul>
+						<li><a href="/portal/portal/patric/Bacteria">All Bacteria</a></li>
+						<li><a href="/portal/portal/patric/Pathogens">All Bacterial Pathogens</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="tab drop"><a href="#" class="tabtext"><span>Downloads</span></a>
+				<div class="submenu">
+					<a href="#" class="menu-close standalone" style="display: none"><img src="/images/menu-close.gif"></a>
+					<ul>
+						<li><a href="http://brcdownloads.vbi.vt.edu/patric2">File Download</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="tab drop"><a href="#" class="tabtext"><span>About</span></a>
+				<div class="submenu">
+					<a href="#" class="menu-close standalone" style="display: none"><img src="/images/menu-close.gif"></a>
+					<ul>
+						<li><a href="/portal/portal/patric/About?page=">What is PATRIC?</a></li>
+						<li><a href="/portal/portal/patric/About?page=cite">Citing PATRIC</a></li>	
+						<li><a href="/portal/portal/patric/About?page=swg">Scientific Working Group</a></li>
+						<li><a href="/portal/portal/patric/About?page=announcement">News &amp; Announcement</a></li>
+						<li><a href="/portal/portal/patric/About?page=release">Data &amp; Software Releases</a></li>
+						<li><a href="/portal/portal/patric/About?page=presentations">Presentations</a></li>
+						<li><a href="/portal/portal/patric/About?page=publications">Publications</a></li>
+						<li><a href="/portal/portal/patric/About?page=sites">Related Sites</a></li>
+						<li><a href="/portal/portal/patric/About?page=contactus">Contact Us</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="tab"><a href="/portal/portal/patric/About?page=contactus" class="tabtext"><span>Contact Us</span></a></li>
+		</ul>
+		<ul id="secondarynav">
+			<li><a href="http://enews.patricbrc.org" id="eNewsMenu">eNews</a></li>
+			<li><a href="#" id="citeMenu">Cite Patric</a></li>
+			<li><a href="#" id="feedbackMenu">Feedback</a></li>
+			<li class="noborder">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c40660c515875dc" class="addthis_button_compact">Share</a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c40660c515875dc"></script>
+				<!-- AddThis Button END -->
+			</li>
+			<li class="login">
+				<span class="login-id">Logged in as StandardUser</span>
+				<a href="#" class="arrow">Logout</a>
+			</li>
+		</ul>
+	</div><!-- .constrain -->
+</div><!-- #header -->
+<!-- 
+	#subheader contains the cart, may also include search boxes later.
+-->
+<div id="subheader">
+	<div class="constrain">
+		<div id="cart">
+			No items, no groups
+		</div>
+	</div><!-- .constrain -->
+</div><!-- #subheader -->
+<!-- 
+	#toppage contains Watchlist Genera, search tools, and the
+	most-viewed bacteria cloud.
+-->
+<div id="toppage">
+	<div class="constrain block">
+		<div class="left block" id="leftColumn">
+			<h2 id="headerWatchlist"><span>Watchlist Genera</span></h2>
+			<div id="watchlistPanel" class="block">
+				<ul id="watchlist0" class="watchlist-list"><!-- content will be placed by Javascript --></ul>
+				<ul id="watchlist1" class="watchlist-list"><!-- content will be placed by Javascript --></ul>
+				<ul id="watchlist2" class="watchlist-list"><!-- content will be placed by Javascript --></ul>
+			</div><!--/#watchlist panel -->
+			
+			<div id="bacteriaDetailWrapper" class="block">
+				<div id="bacteriaDetail" style="display:none">
+					<h2>Listeria</h2>
+					<div class="block-content">
+						<ul id="bacteriaDetailBreadcrumb" class="breadcrumb inline divided"></ul><!--/breadcrumb-->
+						<div class="on-right" id="googleImage">
+						</div><!--/on-right -->
+						<div class="on-left">
+							<p id="bacteriaDetailFeatures"><span class="label">Features:</span> <span class="target">70,784 (10 new)</span></p>
+							<p id="bacteriaDetailGenomes"><span class="label">Genomes:</span> <span class="target">29  (1 new)</span></p>
+							<p id="bacteriaDetailLiterature"><span class="label">Literature:</span> <span class="target">14,644 (4 new)</span></p>
+						</div><!--/on-left-->
+					</div>
+				</div><!--/#bacteria detail-->
+				<img src="/images/blandishment-notch.png" id="detailNotch" alt="" />
+			</div>
+		</div><!-- .left -->
+		<div class="right block" id="rightColumn">
+			<h2 id="headerSearchTools"><span>Search Tools</span></h2>
+			<div id="searchTools" class="block">
+				<div id="searchForms">
+					<!-- all of the forms will have to be edited to work with the existing system. -->
+					<div id="genomeForm" class="searchForm active">
+						<h3>Genome Finder</h3>
+						<form>
+							<ul class="formList">
+								<li>
+									<label for="genomeSelection" class="invisible">Genera</label>
+									<select>
+										<option value="all">All Genera</option>
+										<option value="etc">etc</option>
+									</select>
+								</li>
+								<li>
+									<label for="genomeKeywords" class="inside">Keyword</label>
+									<input type="text" class="textinput label-inside" id="genomeKeywords" name="genomeKeywords" autocomplete="off" />
+								</li>
+								<li>
+									<input type="submit" value="Search" /> <a href="#" class="options-link">More Options</a>
+								</li>
+							</ul>
+							<div class="formNotes">
+								<dl>
+									<dt>Examples:</dt>
+									<dd>Brucella<br />
+										NC_004310
+									</dd>
+								</dl>
+							</div>
+						</form>
+					</div>	
+									
+					<div id="featureForm" class="searchForm">
+						<h3>Feature Finder</h3>
+						<form>
+							<ul class="formList">
+							<li>
+								<label for="featureSelection" class="invisible">Genera</label>
+								<select>
+									<option value="all">All Genera</option>
+									<option value="etc">etc</option>
+								</select>
+							</li>
+							<li>
+								<label for="featureKeywords" class="inside">Keyword</label>
+								<input type="text" class="label-inside textinput" id="featureKeywords" name="featureKeywords" autocomplete="off" />
+							</li>
+							<li>
+								<input type="submit" value="Search" /> <a href="#" class="options-link">More Options</a>
+							</li>
+							</ul>
+							<div class="formNotes">
+								<dl>
+									<dt>Examples:</dt>
+									<dd>DNA Polymerase<br />
+										dnaN<br />
+										VBIBruMel_0001
+									</dd>
+								</dl>
+							</div>
+						</form>
+					</div>
+					<div id="proteinForm" class="searchForm">
+						<h3>Protein Family Sorter</h3>
+						<form>
+							<ul class="formList">
+							<li>
+								<label for="proteinSelection" class="invisible">Genera</label>
+								<select>
+									<option value="all">All Genera</option>
+									<option value="etc">etc</option>
+								</select>
+							</li>
+							<li>
+								<input type="submit" value="Search" /> <a href="#" class="options-link">More Options</a>
+							</li>
+							</ul>
+							<div class="formNotes">
+								<dl>
+									<dt>Examples:</dt>
+									<dd>DNA Polymerase<br />
+										dnaN<br />
+										VBIBruMel_0001
+									</dd>
+								</dl>
+							</div>
+						</form>
+					</div>
+					<div id="pathwayForm" class="searchForm">
+						<h3>Pathway Finder</h3>
+						<form>
+							<ul class="formList">
+							<li>
+								<label for="pathwaySelection" class="invisible">Genera</label>
+								<select>
+									<option value="all">All Genera</option>
+									<option value="etc">etc</option>
+								</select>
+							</li>
+							<li>
+								<label for="pathwayKeywords" class="inside">Keyword</label>
+								<input type="text" class="textinput label-inside" id="pathwayKeywords" name="pathwayKeywords" autocomplete="off" />
+							</li>
+							<li>
+								<input type="submit" value="Search" /> <a href="#" class="options-link">More Options</a>
+							</li>
+							</ul>
+							<div class="formNotes">
+								<dl>
+									<dt>Examples:</dt>
+									<dd>DNA Polymerase<br />
+										dnaN<br />
+										VBIBruMel_0001
+									</dd>
+								</dl>
+							</div>
+						</form>
+					</div>
+					<div id="blastForm" class="searchForm">
+						<h3>Blast</h3>
+						<form>
+							<ul class="formList">
+								<li>
+									<label class="inside" for="blastSequence">Sequence</label>
+									<textarea class="label-inside" id="blastSequence" name="blastSequence"></textarea>
+								</li>
+							</ul>
+							<div class="formNotes">
+								Enter sequence in <a href="#">FASTA Format</a>.
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="searchSelector">
+					<ul>
+						<li id="genomeControl" class="active"><a href="#">Genome Finder</a></li>
+						<li id="featureControl"><a href="#">Feature Finder</a></li>
+						<li id="proteinControl"><a href="#">Protein Family Sorter</a></li>
+						<li id="pathwayControl"><a href="#">Pathway Finder</a></li>
+						<li id="blastControl"><a href="#">BLAST</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<h2 id="headerMostViewed"><span>Most Viewed Bacteria</span></h2>
+			<!-- bacteria cloud -->
+			<div id="tagCloudBlock" class="block"></div>
+			<!-- /bacteria cloud -->
+		</div>
+	</div><!-- .constrain -->
+</div><!-- #toppage -->
+<!-- 
+	#bottompage contains the news, events, and promotional blocks
+-->
+<div id="bottompage">
+	<div class="constrain">
+		<div id="feature" class="left">
+			<div class="image-inset-caption block">
+				<img src="" id="featureImage" />
+				<div class="caption">
+					<h2 id="featureCaption"></h2>
+				</div><!-- caption -->
+			</div><!-- .image-inset-caption -->
+		</div><!-- #feature -->
+		<div id="enews" class="left">
+			<h2 id="headerEnews"><span>eNews</span> <a href="#">More eNews</a></h2>
+			<div id="newsCol1" class="left">
+				<div id="newsSlot1"><div class="colcontent"><!-- content supplied dynamically --></div></div>
+				<div id="newsSlot2"><div class="colcontent"><!-- content supplied dynamically --></div></div>
+			</div><!-- #newsCol1 -->
+			<div id="newsCol2" class="left">
+				<div id="newsSlot3"><div class="colcontent"><!-- content supplied dynamically --></div></div>
+			</div><!-- #newsCol2 -->
+		</div>
+	</div><!-- .constrain -->
+</div><!-- #bottompage -->
+<!-- 
+	#footer contains contact and funding information.
+-->
+<div id="footer">
+	<div class="constrain">
+		<div class="left block">
+			<p>
+				<b>PATRIC</b><br />
+				<b>Virginia Bioinformatics Institute</b><br />
+				Washington Street, Blacksburg, VA 24061<br />
+				<a href="#">Contact Us</a>
+			</p>
+		</div>
+		<div class="right block">
+			<b>Funded by:</b><br />
+			<a href="http://www.nih.gov" id="linkNIH"><span>National Institute of Health</span></a>
+			<a href="http://www.niaid.nih.gov/" id="linkNIAID"><span>National Institute of Allergy and Infectious Diseases</span></a>
+		</div>
+	</div>
+</div><!-- #footer -->
+</body>
+</html>

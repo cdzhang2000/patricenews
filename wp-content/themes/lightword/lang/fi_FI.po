@@ -1,0 +1,539 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Finnish translation of LightWord (1.3.2)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-20 21:47+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Tomi Rantalankila\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_ngettext:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+#: archives.php:61
+#: archives.php:71
+#: index.php:23
+#: page.php:15
+#: single.php:44
+msgid "Not Found"
+msgstr "Ei löytynyt"
+
+#: 404.php:5
+#: archives.php:61
+#: archives.php:72
+#: index.php:24
+#: page.php:16
+#: single.php:45
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Valitettavasti etsit jotakin mitä ei ole täällä."
+
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "Lisää"
+
+#: comments.php:6
+#: legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Tämä viesti on salasanasuojattu. Ole hyvä ja syötä salasana nähdäksesi kommentit."
+
+#: comments.php:15
+#: index.php:12
+#: legacy.comments.php:12
+msgid "Comments"
+msgstr "Kommentit"
+
+#: comments.php:16
+msgid "Trackbacks"
+msgstr "Paluuviitteet"
+
+#: comments.php:17
+#: legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr "( seuraa tämän artikkelin kommentteja )"
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Vanhemmat kommentit"
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Uudemmat kommentit &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+msgid "No comments yet."
+msgstr "Ei kommentteja vielä."
+
+#: comments.php:41
+#: legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Valitettavasti kommentointi on toistaiseksi estetty."
+
+#: comments.php:48
+#: legacy.comments.php:52
+#: single.php:27
+msgid "Leave a comment"
+msgstr "Jätä kommentti"
+
+#: comments.php:51
+#: legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Sinun pitää olle <a href=\"%s\">kirjautuneena sisään</a> jättääksesi kommentin."
+
+#: comments.php:56
+#: legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr "Kirjautunut sisään tunnuksella %s."
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out of this account"
+msgstr "Kirjaudu ulos tästä tunnuksesta"
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr "Kirjaudu ulos &raquo;"
+
+#: comments.php:65
+#: legacy.comments.php:67
+msgid "Name"
+msgstr "Nimi"
+
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+msgid "(required)"
+msgstr "(vaaditaan)"
+
+#: comments.php:68
+#: legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr "Sähköposti (ei julkaista)"
+
+#: comments.php:71
+#: legacy.comments.php:73
+msgid "Website"
+msgstr "WWW-sivu"
+
+#: comments.php:75
+#: legacy.comments.php:81
+msgid "Submit"
+msgstr "Lähetä"
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr "( Peruuta )"
+
+#: comments.php:85
+msgid "No trackbacks yet."
+msgstr "Ei paluuviitteitä vielä."
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr "Paluuviitteet kytketty pois päältä."
+
+#: footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Toteutettu %sin avulla. / %s on %sn kehittämä ulkoasu Sinulle."
+
+#: footer.php:11
+msgid "Go to top"
+msgstr "Siirry ylös"
+
+#: functions.php:20
+msgid "Cufon settings"
+msgstr "Cufonin asetukset<p><i>(kytke pois päältä jos ääkköset eivät toimi)</i></p>"
+
+#: functions.php:22
+#: functions.php:23
+#: functions.php:106
+#: functions.php:107
+msgid "Enabled"
+msgstr "Päällä"
+
+#: functions.php:22
+#: functions.php:106
+msgid "Disabled"
+msgstr "Pois päältä"
+
+#: functions.php:22
+msgid "Extra"
+msgstr ""
+
+#: functions.php:26
+msgid "Disable comments on pages"
+msgstr "Estä kommentointi sivuilla"
+
+#: functions.php:27
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Laita ruksi tähän laatikkoon jos haluat ESTÄÄ KOMMENTIT sivuilla"
+
+#: functions.php:32
+msgid "Image instead text on header"
+msgstr "Kuva tekstin sijasta sivun ylätunnisteessa"
+
+#: functions.php:33
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KUVAN Cufon tekstin sijasta sivun ylätunnisteessa.<br/>Kuvan sijainti: <code>lightword/images/header-image.png</code> / Mitat: <code>600x56px</code>"
+
+#: functions.php:38
+msgid "Header image height in pixels"
+msgstr "Ylätunnisteen kuvan korkeus pikseleinä"
+
+#: functions.php:44
+msgid "About author feature"
+msgstr "Tietoa artikkelin kirjoittaja ominaisuudesta"
+
+#: functions.php:45
+msgid "Add information about post author on post footer"
+msgstr "Jätä tietoa artikkelin kirjoittajasta artikkelin alatunnisteeseen"
+
+#: functions.php:50
+msgid "Enjoy this post feature"
+msgstr "Nauti tämän viestin ominaisuuksista"
+
+#: functions.php:51
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Laita ruksi tähän laatikkoon jos haluat laittaa <em>Nauti tästä artikkelista</em> ominaisuuden PÄÄLLE"
+
+#: functions.php:56
+msgid "Show categories on front menu"
+msgstr "Näytä kategoriat päävalikossa"
+
+#: functions.php:57
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KATEGORIAT sivujen sijasta päävalikossa"
+
+#: functions.php:62
+msgid "Exclude pages from front menu"
+msgstr "Poista sivut yläotsakkeesta"
+
+#: functions.php:63
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
+msgstr "Syöttötapa : <code>5,19,24</code>"
+
+#: functions.php:68
+msgid "Exclude categories from front menu"
+msgstr "Poista kategoriat yläotsakkeesta"
+
+#: functions.php:74
+msgid "Remove home button"
+msgstr "Poista etusivu-nappi"
+
+#: functions.php:75
+msgid "Remove home button from front menu"
+msgstr "Poista etusivu-nappi päävalikosta"
+
+#: functions.php:80
+msgid "Remove search box"
+msgstr "Poista hakulaatikko"
+
+#: functions.php:81
+msgid "Remove search box and expand space for front menu"
+msgstr "Poista hakulaatikko ja lisää tilaa ylätunnisteelle"
+
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr "Poista tagit artikkeleista"
+
+#: functions.php:87
+msgid "Show only categories in post footer"
+msgstr "Näytä ainoastaan kategoriat artikkelin alatunnisteessa"
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr "Poista RSS-leima"
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr "Poista RSS-leima blogin ylätunnisteesta"
+
+#: functions.php:99
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Etsi <code>name=\"cx\"</code> in the <strong>Hakulaatikon koodi</strong> Google CSE:llä ja kirjoita <code>arvo</code> tähän."
+
+#: functions.php:104
+msgid "Sidebox settings"
+msgstr "Artikkelin päivämäärän esitys"
+
+#: functions.php:106
+msgid "Show only date"
+msgstr "Näytä vain päivämäärä"
+
+#: functions.php:106
+msgid "Show only in posts"
+msgstr "Näytä ainoastaan artikkeleissa"
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr "Viimeiset kaksi vaihtoehtoa yhdessä"
+
+#: functions.php:142
+#: functions.php:154
+msgid "LightWord Settings"
+msgstr "LightWordin asetukset"
+
+#: functions.php:149
+msgid "settings saved"
+msgstr ": asetukset tallennettu"
+
+#: functions.php:150
+msgid "settings reset"
+msgstr ": asetukset palautettu"
+
+#: functions.php:158
+msgid "Support the developer"
+msgstr "Tue kehittäjää"
+
+#: functions.php:169
+msgid "Theme version check"
+msgstr "Teeman version tarkistus"
+
+#: functions.php:178
+msgid "Version check failed."
+msgstr "Teeman version tarkistus epäonnistui."
+
+#: functions.php:180
+msgid "Cool! You have the latest version."
+msgstr "Hienoa! Sinulla on uusin versio."
+
+#: functions.php:180
+#: functions.php:181
+msgid "view changelog"
+msgstr "näytä versiokohtaiset muutokset (changelog)"
+
+#: functions.php:181
+msgid "You have"
+msgstr "Sinulla on"
+
+#: functions.php:181
+msgid "Latest version"
+msgstr "Uusin versio"
+
+#: functions.php:181
+msgid "Get the latest version"
+msgstr "Hanki uusin versio"
+
+#: functions.php:188
+msgid "General settings"
+msgstr "Yleiset asetukset"
+
+#: functions.php:242
+msgid "Save changes"
+msgstr "Tallenna muutokset"
+
+#: functions.php:248
+msgid "Search for help"
+msgstr "Etsi apua"
+
+#: functions.php:248
+msgid "or"
+msgstr "tai"
+
+#: functions.php:263
+#: functions.php:275
+msgid "No updates available."
+msgstr "Ei päivityksiä saatavilla."
+
+#: functions.php:282
+msgid "What is Cufon?"
+msgstr "Mikä on Cufon?"
+
+#: functions.php:289
+msgid "Click here to reset all settings"
+msgstr "Palauta tästä kaikki alkuperäiset asetukset"
+
+#: functions.php:454
+msgid "Home"
+msgstr "Etusivu"
+
+#: functions.php:486
+msgid "Search"
+msgstr "Hae"
+
+#: functions.php:511
+#: functions.php:528
+msgid "Off"
+msgstr "Pois"
+
+#: functions.php:566
+msgid "delete"
+msgstr "poista"
+
+#: functions.php:567
+msgid "spam"
+msgstr "merkitse roskapostiksi"
+
+#: functions.php:568
+msgid "edit"
+msgstr "muokkaa"
+
+#: functions.php:576
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Ole hyvä ja laita selaimesi viitteet päälle. Jos taas olet roskapostittaja niin poistu sivulta!"
+
+#: functions.php:588
+#: sidebar.php:33
+msgid "Syndicate this site using RSS"
+msgstr "Seuraa sivua RSS-syötteellä"
+
+#: functions.php:588
+msgid "Subscribe via RSS"
+msgstr "Seuraa RSS:llä"
+
+#: functions.php:611
+msgid "F jS, Y - H:i"
+msgstr "j.m.Y, G:i"
+
+#: functions.php:613
+msgid "( REPLY )"
+msgstr "( VASTAA )"
+
+#: functions.php:614
+#: legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa tarkistusta."
+
+#: index.php:11
+#: single.php:26
+msgid "Filed under:"
+msgstr "Kategoriat:"
+
+#: index.php:11
+#: single.php:26
+msgid "Tagged as:"
+msgstr "Tagit:"
+
+#: index.php:12
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+#: index.php:12
+#: single.php:27
+msgid "Comments Off"
+msgstr "Kommentit pois päältä"
+
+#: index.php:12
+msgid "No Comments"
+msgstr "Ei kommentteja"
+
+#: index.php:12
+msgid "Read more about"
+msgstr "Lue lisää"
+
+#: index.php:29
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Uudemmat artikkelit"
+
+#: index.php:30
+msgid "Older Entries &raquo;"
+msgstr "Vanhemmat artikkelit &raquo;"
+
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr "j.m.Y, G:i"
+
+#: legacy.comments.php:26
+msgid "edit this comment"
+msgstr "muokkaa tätä kommenttia"
+
+#: legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Voit käyttää näitä tageja: %s"
+
+#: page.php:6
+msgid "Edit this page"
+msgstr "Muokkaa tätä sivua"
+
+#: sidebar.php:9
+msgid "Pages"
+msgstr "Sivut"
+
+#: sidebar.php:14
+msgid "Categories"
+msgstr "Kategoriat"
+
+#: sidebar.php:19
+msgid "Blogroll"
+msgstr ""
+
+#: sidebar.php:24
+msgid "Archive"
+msgstr "Arkisto"
+
+#: sidebar.php:29
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:33
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"RSS-syöte\">RSS</abbr>"
+
+#: sidebar.php:34
+msgid "The latest comments to all posts in RSS"
+msgstr "Viimeimmät kommentit kaikista artikkeleista RSS-syötteenä"
+
+#: sidebar.php:34
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Kommentit <abbr title=\"Really Simple Syndication\">RSS-syötteenä</abbr>"
+
+#: single.php:7
+msgid "Edit this post"
+msgstr "Muokkaa tätä artikkelia"
+
+#: single.php:13
+msgid "Enjoy this article?"
+msgstr "Nauti tästä artikkelista?"
+
+#: single.php:14
+msgid "Consider subscribing to our rss feed!"
+msgstr "Harkitse RSS-syötteemme seuraamista!"
+
+#: single.php:21
+msgid "About"
+msgstr "Tietoa"
+
+#: single.php:21
+msgid "No description. Please complete your profile."
+msgstr "Ei kuvausta. Ole hyvä ja täydennä profiiliasi."
+
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr ""
+#~ "Ruksita tämä laatikko jos haluat kytkeä <em>Cufonin</em> POIS PÄÄLTÄ<br/>"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Laita Extra Cufon päälle"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "Laita ruksi tähän laatikkoon laittaaksesi <em>Extra Cufon</em> "
+#~ "ominaisuuden PÄÄLLE<br/><b>Kielillä joissa on erikoismerkkejä (kuten "
+#~ "saksa)</b>"
+#~ msgid "Post author"
+#~ msgstr "Artikkelin kirjoittaja"
+#~ msgid "Take out tags in posts footer"
+#~ msgstr "Poista tagit artikkelin alaosasta"
+#~ msgid "Author"
+#~ msgstr "Kirjoittaja"
+#~ msgid "Click here to cancel reply"
+#~ msgstr "Klikkaa tästä peruuttaaksesi vastaus"
+#~ msgid "Reply to this comment"
+#~ msgstr "Vastaa tähän kommenttiin"
+#~ msgid "% Comments"
+#~ msgstr "% kommenttia"
+

@@ -1,0 +1,46 @@
+#header, #subheader,
+#toppage, #bottompage,
+#footer, .block, .post, .feature, .event,
+.block-content,
+.block {
+	zoom: 1;
+}
+
+ul#secondarynav li.login {
+	zoom: 1;
+}
+
+ul#secondarynav li.login .login-id {
+	display: inline;
+	float: none;
+}
+ul#secondarynav li.login a {
+	float: none;
+	display: inline-block;
+}
+
+#feature .caption {
+	background-color: #32688d;
+}
+
+/* gradients the IE7 way */
+
+ul#secondarynav li.login {
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#32688d, endColorStr=#114c75);
+}
+
+
+ul#mainnav .tab .tabtext {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#ffffff, endColorStr=#e1e1e1);
+}
+
+ul#mainnav .active .tabtext,
+ul#mainnav .tab:hover .tabtext,
+ul#mainnav .open .tabtext {
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#32688d, endColorStr=#114c75);
+}
+
+#footer {
+	filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#09456f, endColorStr=#32688d);
+}

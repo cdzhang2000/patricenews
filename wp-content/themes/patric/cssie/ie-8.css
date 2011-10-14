@@ -1,0 +1,21 @@
+/* gradients the IE8 way */
+
+
+ul#secondarynav li.login {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#32688d, endColorStr=#114c75)";
+}
+
+ul#mainnav .tab .tabtext {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#ffffff, endColorStr=#e1e1e1)";
+}
+
+ul#mainnav .active .tabtext,
+ul#mainnav .tab:hover .tabtext,
+ul#mainnav .open .tabtext {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#32688d, endColorStr=#114c75)";
+}
+
+#footer {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient( gradientType=0,startColorStr=#09456f, endColorStr=#32688d)";
+}
+
