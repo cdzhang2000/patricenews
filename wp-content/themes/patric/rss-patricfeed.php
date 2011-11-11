@@ -7,9 +7,18 @@ $numposts = 5;
 
 /* chain the queries we need to do. */
 $featureArgs = array('post_type'=>array('feature'),'showposts'=>1,'suppress_filters'=>true);
-$postArgs = array('post_type' => array('post','event'),'showposts' => 5);
-		
-$queries = array($postArgs,$featureArgs);
+
+$eventArgs = array('post_type' =>'event','category_name' =>'data-release, patric-in-the-news, presentations, publications, webupdate', 'showposts' =>5 );
+
+$postArgs = array('post_type' =>'post, event', 'category_name' =>'data-release, patric-in-the-news, presentations, publications, webupdate', 'showposts'=>7);
+
+//$my_query = new WP_Query('category_name'=>'data-release,category_name=patric-in-the-news, category_name=presentations, category_name=publications, category_name=webupdate'); 
+
+//$postArgs = $my_query->have_posts();
+
+//$queries = array($featureArgs,$eventArgs, $postArgs);
+
+$queries = array($featureArgs,$postArgs);
 
 //$posts = query_posts($postArgs);
 
@@ -108,5 +117,6 @@ foreach($queries as $query):
 	</item>
 	<?php endwhile; endforeach;?>
 </channel>
+
 </rss>
 
