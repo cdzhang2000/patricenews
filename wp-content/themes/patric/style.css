@@ -122,7 +122,8 @@ body {
 }
 
 #toppage {
-	background-color: #ffffff;
+	/*background-color: #ffffff; */
+	background-color: #F4F4F4;
 	border-bottom: 1px #fff solid;
 	padding-bottom: 2em;
 }
@@ -143,9 +144,9 @@ body {
 
 #header {
 	position: relative;
-	height: 80px;
+	height: 90px;
 	z-index: 200;
-	background: #fff url('images/background-header.png') scroll repeat-x top left;
+	background: #fff url('images/background-header2.png') scroll repeat-x top left;
 }
 
 #masthead {
@@ -445,27 +446,27 @@ ul#secondarynav li.login a {
 
 #eNewsMenu, #citeMenu, #subscribeMenu, #feedbackMenu, #RSS {
 	padding-left: 24px;
-	background: transparent url('images/icon_cite.png') scroll no-repeat 0 3px;
+	background: transparent url('http://www.patricbrc.org/patric/images/icon_cite.png') scroll no-repeat 0 3px;
 }
 
 #eNewsMenu {
-	background-image: url('images/icon_enews.png');
+	background-image: url('http://www.patricbrc.org/patric/images/icon_enews.png');
 }
 
 #citeMenu {
-	background-image: url('images/icon_cite.png');
+	background-image: url('http://www.patricbrc.org/patric/images/icon_cite.png');
 }
 
 #feedbackMenu {
-	background-image: url('images/icon_feedback.png');
+	background-image: url('http://www.patricbrc.org/patric/images/icon_feedback.png');
 }
 
 #subscribeMenu {
-	background-image: url('images/icon_subscribe.png');
+	background-image: url('http://www.patricbrc.org/patric/images/icon_subscribe.png');
 }
 
 #RSS {
-	background-image: url('images/icon-rss.png');
+	background-image: url('http://www.patricbrc.org/patric/images/icon-rss.png');
 }
 
 span.at300bs.at15t_compact {
@@ -561,6 +562,12 @@ span.at300bs.at15t_compact {
 .vertnav li.nav-publications a{
 	padding-left: 24px;	
 	background: transparent url('images/icon-publications.png') scroll no-repeat 0 0;
+}
+
+/*blog */
+.vertnav li.nav-blog a{
+	padding-left: 24px;	
+	background: transparent url('images/icon-blog.png') scroll no-repeat 0 0;
 }
 
 .vertnav li.nav-webupdate a{
@@ -821,6 +828,12 @@ span.at300bs.at15t_compact {
 	background-image: url('images/icon-publications.png')
 }
 
+/* blog */
+.categories-list li.categorylist-blog {
+	background-image: url('images/icon-blog.png')
+}
+
+
 .categories-list li.categorylist-events {
 	background-image: url('images/icon-events.png');
 }
@@ -882,6 +895,13 @@ h1.patric-in-the-news {
 
 h1.patric-uncategorized {
 	background: url('images/icon-general.png') scroll no-repeat left 2px;
+	padding-left: 25px;	
+}
+
+/* blog image */
+
+h1.blog {
+	background: url('images/icon-blog.png') scroll no-repeat left 2px;
 	padding-left: 25px;	
 }
 
@@ -952,6 +972,36 @@ h1.patric-uncategorized {
 	font-size: 1.2em;
 }
 
+#citeMenu, #subscribeMenu, #RSS, #facebook, #twitter, #youtube {
+	padding-left: 24px;
+	height: 16px;
+	background: transparent url('http://www.patricbrc.org/patric/images/icon_cite.png') scroll no-repeat 0 3px;
+}
+
+#citeMenu {
+	background-image: url('http://www.patricbrc.org/patric/images/icon_cite.png');
+}
+
+#subscribeMenu {
+        background-image: url('http://www.patricbrc.org/patric/images/icon_subscribe.png');
+}
+
+#RSS {
+    background-image: url('http://www.patricbrc.org/patric/images/icon-rss.png');
+}
+
+#facebook {
+   background-image: url('http://www.patricbrc.org/patric/images/facebook_icon.jpg');
+}
+
+#twitter{
+   background-image: url('http://www.patricbrc.org/patric/images/twitter_icon.jpg');
+}
+
+#youtube{
+   background-image: url('http://www.patricbrc.org/patric/images/youtube_icon.jpg');
+   width: 30px;
+}
 
 
 /* @end */

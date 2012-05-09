@@ -8,11 +8,18 @@ $numposts = 20; // numposts not used anywhere in this php page!! (joe)
 /* chain the queries we need to do. */
 
 $featureArgs = array('post_type' => array('feature'), 'showposts' => 1, 'suppress_filters'=>true);
-$postArgs = array('post_type' => array('post','event'), 'showposts' => 9999);
+//$postArgs = array('post_type' => array('post','event'), 'showposts' => 9999);
 
-$queries = array($featureArgs, $postArgs);
-// $queries = array($postArgs);
+//$eventArgs = array('post_type' =>'event','category_name' =>'data-release, patric-in-the-news, presentations, publications, webupdate', 'showposts' =>5 );
 
+$postArgs = array('post_type' =>'post, event', 'category_name' =>'data-release, patric-in-the-news, presentations, publications, webupdate', 'showposts'=>9999);
+
+
+$stickyArgs = array('posts_per_page' =>2, 'post__in'  => get_option( 'sticky_posts' ),	'ignore_sticky_posts' => 2);
+
+
+//$queries = array($stickyArgs, $postArgs, $featureArgs);
+$queries = array($postArgs, $featureArgs);
 
 
 header('Content-Type: ' . feed_content_type('rss-http') . '; charset=' . get_option('blog_charset'), true);

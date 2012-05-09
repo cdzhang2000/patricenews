@@ -10,7 +10,7 @@
 				<b>PATRIC</b><br />
 				<b>Virginia Bioinformatics Institute</b><br />
 				Washington Street, Blacksburg, VA 24061<br />
-				<a href="http://www.patricbrc.org/portal/portal/patric/About?page=contactus">Contact Us</a>
+				<a href="http://enews.patricbrc.org/contact-us/">Contact Us</a>
 			</p>
 		</div>
 		<div class="right block">

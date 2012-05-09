@@ -7,10 +7,16 @@ $numposts = 5;
 
 /* chain the queries we need to do. */
 $featureArgs = array('post_type'=>array('feature'),'showposts'=>1,'suppress_filters'=>true);
-$postArgs = array('post_type' => array('post','event'),'showposts' => 5);
-		
-$queries = array($postArgs,$featureArgs);
 
+
+$postArgs = array('post_type' =>'post, event', 'post__not_in' => get_option( 'sticky_posts'), 'category_name' =>'data-release, patric-in-the-news, presentations, publications, webupdate', 'showposts'=>5);
+
+//$postArgs = $my_query->have_posts();
+
+$stickyArgs = array('posts_per_page' =>2, 'post__in'  => get_option( 'sticky_posts' ),	'ignore_sticky_posts' => 2);
+
+
+$queries = array($stickyArgs, $postArgs, $featureArgs);
 //$posts = query_posts($postArgs);
 
 header('Content-Type: ' . feed_content_type('rss-http') . '; charset=' . get_option('blog_charset'), true);
@@ -108,5 +114,6 @@ foreach($queries as $query):
 	</item>
 	<?php endwhile; endforeach;?>
 </channel>
+
 </rss>
 
